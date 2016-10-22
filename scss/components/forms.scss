@@ -1,0 +1,29 @@
+/*forms*/
+.input {
+  //@extend .btn;
+}
+
+.label {
+  display: block;
+
+  position: relative;
+
+  &__before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    font-size: $base-font-size;
+    color: #000;
+  }
+
+  &__after {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    font-size: $base-font-size;
+    color: #000;
+  }
+}
+/*end of forms*/

@@ -1,0 +1,17 @@
+<svg id="Слой_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.3 21.1">
+    <style>
+        .st0{fill:url(#XMLID_18_)}.st1{fill:url(#XMLID_19_)}
+    </style>
+    <g id="XMLID_14_">
+        <linearGradient id="XMLID_18_" gradientUnits="userSpaceOnUse" x1=".505" y1="8.762" x2="14.836" y2="8.762">
+            <stop offset="0" stop-color="#507296"/>
+            <stop offset=".994" stop-color="#597aa0"/>
+        </linearGradient>
+        <path id="XMLID_15_" class="st0" d="M14.8 9.3h-4.5V0H5.1v9.3H.5l7.4 8.2z"/>
+        <linearGradient id="XMLID_19_" gradientUnits="userSpaceOnUse" y1="19.971" x2="15.341" y2="19.971">
+            <stop offset="0" stop-color="#507296"/>
+            <stop offset=".994" stop-color="#597aa0"/>
+        </linearGradient>
+        <path id="XMLID_16_" class="st1" d="M14.4 18.9H.9c-.5 0-.9.3-.9.6v1c0 .3.4.6.9.6h13.5c.5 0 .9-.3.9-.6v-1c0-.4-.4-.6-.9-.6z"/>
+    </g>
+</svg>

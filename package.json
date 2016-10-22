@@ -1,0 +1,25 @@
+{
+  "name": "amrest-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "g1un",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.4.1",
+    "browser-sync": "^2.16.0",
+    "gulp": "^3.9.1",
+    "gulp-img64": "0.0.6",
+    "gulp-inline": "^0.1.2",
+    "gulp-jade": "^1.1.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-svgmin": "^1.2.3",
+    "gulp-svgstore": "^6.0.0",
+    "path": "^0.12.7",
+    "svgo": "^0.7.1"
+  }
+}

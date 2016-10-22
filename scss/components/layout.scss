@@ -1,0 +1,19 @@
+/*layout*/
+.layout-start {
+  padding: 2.75 * $base-font-size 0 3.625 * $base-font-size;
+
+  &--login {
+    padding-top: 1.125 * $base-font-size;
+    padding-left: 2 * $base-font-size;
+    padding-right: 2 * $base-font-size;
+  }
+
+  &__logo {
+    margin: 0 auto 1.5 * $base-font-size;
+  }
+
+  &__label {
+    margin-bottom: .875 * $base-font-size;
+  }
+}
+/*end of layout*/

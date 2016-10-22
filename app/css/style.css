@@ -1,0 +1,109 @@
+/*style*/
+/*variables*/
+/*font-family*/
+/*end of font-family*/
+/*font-size*/
+/*end of font-size*/
+/*color*/
+/*end of color*/
+/*width*/
+/*end of width*/
+/*end of variables*/
+/*mixins*/
+/*end of mixins*/
+/*button*/
+.btn-form {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 8px;
+  padding-right: 8px;
+  background: #fff;
+  border: 1px solid #00828f;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  line-height: 40px !important;
+}
+
+.btn-form:focus {
+  background: #f2f2f2;
+}
+
+.btn-form__right {
+  padding-right: 30px;
+}
+
+.btn-big {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 0;
+  padding-right: 0;
+  background: #53759a;
+  border: 0 solid #00828f;
+  -webkit-border-radius: 7px;
+     -moz-border-radius: 7px;
+          border-radius: 7px;
+  line-height: 48px !important;
+}
+
+.btn-big:focus {
+  background: #53759a;
+}
+
+/*end of button*/
+/*layout*/
+.layout-start {
+  padding: 44px 0 58px;
+}
+
+.layout-start--login {
+  padding-top: 18px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.layout-start__logo {
+  margin: 0 auto 24px;
+}
+
+.layout-start__label {
+  margin-bottom: 14px;
+}
+
+/*end of layout*/
+/*logo*/
+.logo {
+  width: 152px;
+  height: 92px;
+  background: url("../img/svg/logo.svg") no-repeat 0 0;
+}
+
+/*end of logo*/
+/*forms*/
+.label {
+  display: block;
+  position: relative;
+}
+
+.label__before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: #000;
+}
+
+.label__after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 16px;
+  color: #000;
+}
+
+/*end of forms*/
+/*end of style*/

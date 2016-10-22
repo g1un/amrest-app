@@ -1,0 +1,41 @@
+/*mixins*/
+//buttons, inputs
+@mixin btn($pl, $pr, $bg, $bg-hover, $border-width, $border-color, $border-radius, $line-height) {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: {
+    left: $pl;
+    right: $pr;
+  }
+
+  background: $bg;
+  border: $border-width solid $border-color;
+  border-radius: $border-radius;
+
+  line-height: $line-height !important;
+
+  &:focus {
+    background: $bg-hover;
+  }
+}
+
+//placeholder
+@mixin placeholder($opacity, $color) {
+  &::-webkit-input-placeholder{
+    opacity: $opacity;
+    color: $color;
+  }
+
+  &:-ms-input-placeholder{
+    opacity: $opacity;
+    color: $color;
+  }
+
+  &::-moz-placeholder{
+    opacity: $opacity;
+    color: $color;
+  }
+}
+/*end of mixins*/

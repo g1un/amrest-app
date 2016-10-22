@@ -1,0 +1,32 @@
+/*button*/
+//buttons, inputs
+.btn-form {
+  @include btn(
+    .5 * $base-font-size,
+    .5 * $base-font-size,
+    #fff,
+    $btn-hover-color,
+    1 / 16 * $base-font-size,
+    $input-color,
+    .375 * $base-font-size,
+    2.5 * $base-font-size
+  );
+
+  &__right {
+    padding-right: 1.875 * $base-font-size;
+  }
+}
+
+.btn-big {
+  @include btn(
+    0,
+    0,
+    $big-btn-color,
+    $big-btn-color,
+    0,
+    $input-color,
+    .4375 * $base-font-size,
+    3 * $base-font-size
+  );
+}
+/*end of button*/

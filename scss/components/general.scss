@@ -1,0 +1,29 @@
+/*general*/
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: $base-font-size;
+	line-height: 1.5rem;
+}
+
+body {
+	position: relative;
+}
+
+.clearfix::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+/*end of general*/
