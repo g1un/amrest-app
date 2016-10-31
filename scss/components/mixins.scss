@@ -5,6 +5,8 @@
 
   box-sizing: border-box;
 
+  text-decoration: none;
+
   padding: {
     left: $pl;
     right: $pr;
@@ -16,7 +18,8 @@
 
   line-height: $line-height !important;
 
-  &:focus {
+  &:focus,
+  &:hover{
     background: $bg-hover;
   }
 }

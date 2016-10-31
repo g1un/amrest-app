@@ -1,13 +1,17 @@
 /*variables*/
-/*font-family*/
-$roboto-reg: Roboto-Regular, sans-serif;
-/*end of font-family*/
+/*width*/
+$width-lg: 1200px;
+$width-md: 768px;
+/*/width*/
 
 /*font-size*/
-$base-font-size: 16px;
-$text-common-font-size: $base-font-size - 2px;
-$title-font-size: $base-font-size + 2px;
-/*end of font-size*/
+$base-font-size: 1rem;
+$sm-font-size: 14 / 16 * $base-font-size;
+//font-size*/
+
+/*font-family*/
+$roboto-reg: Roboto-Regular, sans-serif;
+/*/font-family*/
 
 /*color*/
 $placeholder-text-color: #b3b3b3;
@@ -16,13 +20,12 @@ $input-text-color: #808080;
 $text-common-color: #224347;
 $text-common-light-color: #3b8989;
 $input-color: #00828f;
+$hdr-start-color: #caeef1;
+$bg-color: #58bbc4;
+$footer-start-btn-hover: #54999b;
 $big-btn-color: #53759a;
+$big-btn-color-login: rgba(83,117,154,.7);
 $accent-color: #ff7435;
 $title-common-color-hover: $accent-color;
-/*end of color*/
-
-/*width*/
-$width-lg: 1200px;
-$width-md: 768px;
-/*end of width*/
-/*end of variables*/
+/*/color*/
+/*/variables*/

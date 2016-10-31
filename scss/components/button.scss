@@ -12,8 +12,39 @@
     2.5 * $base-font-size
   );
 
-  &__right {
+  @extend .input-text;
+
+  &--right {
     padding-right: 1.875 * $base-font-size;
+
+    & + svg {
+      position: absolute;
+      top: 13 / 16 * $base-font-size;
+      right: 7 / 16 * $base-font-size;
+
+      width: $base-font-size;
+      height: auto;
+
+      fill: $placeholder-text-color;
+    }
+  }
+
+  @include placeholder(1, $placeholder-text-color);
+
+  &--login {
+    box-shadow: 0 3 / 16 * $base-font-size .125 * $base-font-size 0 rgba(0,0,0,.25);
+  }
+}
+
+.btn-twosided {
+  padding-left: 30 / 16 * $base-font-size;
+  padding-right: 30 / 16 * $base-font-size;
+
+  position: relative;
+
+  &:focus,
+  &:hover {
+    background: #fff;
   }
 }
 
@@ -28,5 +59,29 @@
     .4375 * $base-font-size,
     3 * $base-font-size
   );
+
+  &--login {
+    background: $big-btn-color-login;
+  }
+}
+
+.btn-footer-start {
+  @include btn(
+    5 / 16 * $base-font-size,
+    5 / 16 * $base-font-size,
+    $input-color,
+    $footer-start-btn-hover,
+    0,
+    transparent,
+    0,
+    48 / 16 * $base-font-size
+  );
+
+  text-align: center;
+
+  &:focus,
+  &:hover {
+    box-shadow: 5 / 16 * $base-font-size 5 / 16 * $base-font-size 5 / 16 * $base-font-size 0 rgba(0,0,0,.25);
+  }
 }
 /*end of button*/

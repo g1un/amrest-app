@@ -1,0 +1,21 @@
+/*footer*/
+.footer-start {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  height: 60 / 16 * $base-font-size;
+  padding: 5 / 16 * $base-font-size;
+  box-sizing: border-box;
+
+  background: $input-color;
+
+  &__btn {
+    width: 45%;
+  }
+}
+/*/footer*/

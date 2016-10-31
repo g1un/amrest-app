@@ -4,6 +4,30 @@
 }
 
 .input-text {
+  @extend %common-text;
+  font-size: $sm-font-size;
+  color: $input-text-color;
+}
 
+.text-big-btn {
+  font-family: $roboto-reg;
+  font-size: 17 / 16 * $base-font-size;
+  line-height: 1.2em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.text-footer-start {
+  font-family: $roboto-reg;
+  font-size: $base-font-size;
+  color: #fff;
+}
+
+.text-hdr-start {
+  @extend %common-text;
+  font-size: $sm-font-size;
+  color: $input-color;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 /*end of typography*/

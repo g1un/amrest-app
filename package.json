@@ -20,6 +20,7 @@
     "gulp-svgmin": "^1.2.3",
     "gulp-svgstore": "^6.0.0",
     "path": "^0.12.7",
+    "run-sequence": "^1.2.2",
     "svgo": "^0.7.1"
   }
 }

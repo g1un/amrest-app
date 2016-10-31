@@ -1,9 +1,20 @@
 /*layout*/
 .layout-start {
-  padding: 2.75 * $base-font-size 0 3.625 * $base-font-size;
+  padding: 43 / 16 * $base-font-size 0 3.625 * $base-font-size;
+  box-sizing: border-box;
+
+  height: 100vh;
 
   &--login {
     padding-top: 1.125 * $base-font-size;
+    padding-left: 2 * $base-font-size;
+    padding-right: 2 * $base-font-size;
+
+    background: $bg-color url('../img/bg-start.jpg') no-repeat 0 0;
+  }
+
+  &--login-reminder {
+    padding-top: 60 / 16 * $base-font-size;
     padding-left: 2 * $base-font-size;
     padding-right: 2 * $base-font-size;
   }

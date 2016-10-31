@@ -1,0 +1,24 @@
+doctype html
+html
+	head
+		title «Amrest-app»
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		link(rel='stylesheet', type='text/css', href='css/normalize.css')
+		link(rel='stylesheet', type='text/css', href='css/style.css')
+	body
+		div.layout-start
+			header.header-start
+				div.header-start__title
+					a(href='#').header-start__btn
+						img(src='img/svg/back-arrow.svg')
+					h2.header-start__title.text-hdr-start Выбор ресторана
+			form(action='#' method='get').form-search
+				label.btn-form.label-twosided
+					img(src='img/svg/loupe.svg')
+					input(type='text' name='restaurant' placeholder='Поиск ресторана').input
+					img(src='img/svg/cross.svg')
+
+			footer.footer-start
+				a(href='#').btn-footer-start.text-footer-start.footer-start__btn Забыли пароль
+				a(href='#').btn-footer-start.text-footer-start.footer-start__btn Регистрация

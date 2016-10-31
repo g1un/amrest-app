@@ -1,35 +1,29 @@
 /*header*/
-.header {
-  height: 5.625 * $base-font-size;
-  background: #fff;
+.header-start {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 
-  &__logo {
-    margin: $base-font-size 0 0;
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5 / 16 * $base-font-size 36 / 16 * $base-font-size;
+    box-sizing: border-box;
+    height: 43 / 16 * $base-font-size;
+
+    background: $hdr-start-color;
   }
 
-  &__nav {
-    margin: 5.625 * $base-font-size 0 0;
+  &__btn {
+    position: absolute;
+    top: 14 / 16 * $base-font-size;
+    left: 18 / 16 * $base-font-size;
 
-    @media (min-width: $width-lg) {
-      margin: 2.125 * $base-font-size 0 0;
-    }
-  }
-
-  &__tel{
-    margin: 1.375 * $base-font-size 0 0;
-  }
-
-  &__button {
-    display: block;
-    float: right;
-
-    margin: 1.625 * $base-font-size 0 0;
-  }
-
-  &__sandwich {
-    float: right;
-
-    margin: 2.125 * $base-font-size 0;
+    width: 18 / 16 * $base-font-size;
   }
 }
-/*end of header*/
+/*/header*/

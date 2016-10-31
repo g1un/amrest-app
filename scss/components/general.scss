@@ -7,23 +7,40 @@ h2,
 h3,
 h4,
 ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
 }
 
 html {
-	font-size: $base-font-size;
-	line-height: 1.5rem;
+  height: 100vh;
+
+  font-size: 16px;
+
+  @media (min-width: $width-md) {
+    font-size: 32px;
+  }
+
+  scrollbar-face-color: $bg-color;
+  scrollbar-track-color: #fff;
+  scrollbar-base-color: #fff;
+  scrollbar-3dlight-color: #fff;
+  scrollbar-highlight-color: #fff;
+  scrollbar-arrow-color: $bg-color;
+  scrollbar-shadow-color: #fff;
+  scrollbar-dark-shadow-color: #fff;
 }
 
 body {
-	position: relative;
+  position: relative;
+
+  height: 100vh;
 }
 
 .clearfix::after {
-	content: '';
-	display: table;
-	clear: both;
+  content: '';
+  display: table;
+  clear: both;
 }
 /*end of general*/
