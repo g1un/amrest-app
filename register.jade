@@ -1,0 +1,30 @@
+doctype html
+html
+	head
+		title «Amrest-app»
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		link(rel='stylesheet', type='text/css', href='css/normalize.css')
+		link(rel='stylesheet', type='text/css', href='css/style.css')
+	body
+		div.layout-start.layout-start--padding
+			header.header-start
+				a(href='#').header-start__btn
+					img(src='img/svg/cross.svg')
+				h2.header-start__title.text-hdr-start Регистрация
+			form(action='#' method='get')
+				a(href='#').label-rigth.btn-form
+					|Выберите бренд
+					img(src='img/svg/arrow-right.svg' alt='arrow-right')
+				label.label.layout-start__label
+					input(type='text' name='email' placeholder='E-mail, введенный при регистрации').btn-form
+				div.captcha.layout-start__label
+					div.btn-form.captcha__item
+						img(src='img/svg/captcha.svg')
+					label.captcha__item
+						input(type='text' name='captch' placeholder='Введите код с картинки').btn-form
+				label.label.layout-start__label
+					input(type='submit' name='submit' value='Запросить').btn-big.btn-big--login.text-big-btn.btn-form--login
+			footer.footer-start
+				a(href='#').btn-footer-start.text-main.footer-start__btn Забыли пароль
+				a(href='#').btn-footer-start.text-main.footer-start__btn Регистрация

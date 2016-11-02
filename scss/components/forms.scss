@@ -84,4 +84,22 @@
     }
   }
 }
+
+.label-rigth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-right: 10 / 16 * $base-font-size;
+
+  svg {
+    width: 14 / 16 * $base-font-size;
+
+    margin-left: 8 / 16 * $base-font-size;
+
+    path {
+      fill: $dark-green;
+    }
+  }
+}
 /*/forms*/

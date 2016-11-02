@@ -26,7 +26,7 @@ gulp.task('sass', function(){
   }))
 });
 
-var currentIndex = 'password-sent';
+var currentIndex = 'register';
 
 gulp.task('jade', function(){
   return gulp.src('*.jade')

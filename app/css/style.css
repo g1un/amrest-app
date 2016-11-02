@@ -376,6 +376,34 @@ body::-webkit-scrollbar-thumb {
   fill: #808080;
 }
 
+.label-rigth {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 0.625rem;
+}
+
+.label-rigth svg {
+  width: 0.875rem;
+  margin-left: 0.5rem;
+}
+
+.label-rigth svg path {
+  fill: #006064;
+}
+
 /*/forms*/
 /*footer*/
 .footer-start {
