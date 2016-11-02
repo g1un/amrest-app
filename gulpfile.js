@@ -26,10 +26,10 @@ gulp.task('sass', function(){
   }))
 });
 
-var currentIndex = 'rest';
+var currentIndex = 'password-sent';
 
 gulp.task('jade', function(){
-  return gulp.src(currentIndex + '.jade')
+  return gulp.src('*.jade')
     .pipe(jade({
         pretty: true
     }))
@@ -40,7 +40,7 @@ gulp.task('jade', function(){
 });
 
 gulp.task('inline', function(){
-  return gulp.src('app/' + currentIndex + '.html')
+  return gulp.src('app/*.html')
     .pipe(inline({
       base: 'app/img/svg',
       disabledTypes: ['js', 'css'],
@@ -70,8 +70,8 @@ gulp.task('svgmin', function () {
 
 gulp.task('watch', ['browserSync', 'sass', 'jade', 'inline'], function(){
   gulp.watch('**/*.scss', ['sass']);
-  gulp.watch('**/' + currentIndex + '.jade', ['jade']);
-  gulp.watch('app/' + currentIndex + '.html', ['inline']);
+  gulp.watch('**/*.jade', ['jade']);
+  gulp.watch('app/*.html', ['inline']);
   // gulp.watch('app/js/**/*.js', browserSync.reload);
 });
 gulp.task('browserSync', function() {

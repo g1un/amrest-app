@@ -3,6 +3,22 @@
   font-family: $roboto-reg;
 }
 
+.text-main {
+  font-family: $roboto-reg;
+  font-size: $base-font-size;
+  color: #fff;
+}
+
+.text-main-green {
+  @extend .text-main;
+  color: $text-common-light-color;
+}
+
+.text-main-grey {
+  @extend .text-main;
+  color: $input-text-color;
+}
+
 .input-text {
   @extend %common-text;
   font-size: $sm-font-size;
@@ -15,12 +31,6 @@
   line-height: 1.2em;
   color: #fff;
   text-transform: uppercase;
-}
-
-.text-footer-start {
-  font-family: $roboto-reg;
-  font-size: $base-font-size;
-  color: #fff;
 }
 
 .text-hdr-start {

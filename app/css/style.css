@@ -183,6 +183,20 @@ body::-webkit-scrollbar-thumb {
   font-family: Roboto-Regular, sans-serif;
 }
 
+.text-main, .text-main-green, .text-main-grey {
+  font-family: Roboto-Regular, sans-serif;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.text-main-green {
+  color: #3b8989;
+}
+
+.text-main-grey {
+  color: #808080;
+}
+
 .input-text, .btn-form {
   font-size: 0.875rem;
   color: #808080;
@@ -194,12 +208,6 @@ body::-webkit-scrollbar-thumb {
   line-height: 1.2em;
   color: #fff;
   text-transform: uppercase;
-}
-
-.text-footer-start {
-  font-family: Roboto-Regular, sans-serif;
-  font-size: 1rem;
-  color: #fff;
 }
 
 .text-hdr-start {
@@ -232,7 +240,7 @@ body::-webkit-scrollbar-thumb {
   background: #58bbc4 url("../img/bg-start.jpg") no-repeat 0 0;
 }
 
-.layout-start--login-reminder {
+.layout-start--padding {
   padding-top: 3.75rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -525,4 +533,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*/rest-list*/
+/*password-message*/
+.password-message {
+  padding-top: 2.0625rem;
+}
+
+.password-message__text {
+  margin-bottom: 2.1875rem;
+  text-align: center;
+}
+
+.password-message__text:last-child {
+  margin-bottom: 0;
+}
+
+/*/password-message*/
 /*end of style*/
