@@ -1,0 +1,50 @@
+/*rest-list*/
+.rest-find {
+  width: 100%;
+  box-sizing: border-box;
+
+  height: 100%;
+
+  overflow: auto;
+
+  &__list {
+    padding-right: 20 / 16 * $base-font-size;
+  }
+
+  &__form-list {
+    display: none;
+  }
+
+  &--searching {
+
+    .rest-find {
+
+      &__form {
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        right: 0;
+      }
+
+      &__form-list {
+        display: block;
+      }
+
+      &__list {
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+
+          background: rgba(0, 0, 0, .2);
+        }
+      }
+    }
+  }
+}
+/*/rest-list*/

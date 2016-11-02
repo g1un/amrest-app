@@ -30,4 +30,11 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.text-sm {
+  @extend %common-text;
+  font-size: $sm-font-size;
+  color: $text-common-color;
+  text-decoration: none;
+}
 /*end of typography*/

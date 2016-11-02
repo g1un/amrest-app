@@ -21,21 +21,24 @@ html {
   @media (min-width: $width-md) {
     font-size: 32px;
   }
-
-  scrollbar-face-color: $bg-color;
-  scrollbar-track-color: #fff;
-  scrollbar-base-color: #fff;
-  scrollbar-3dlight-color: #fff;
-  scrollbar-highlight-color: #fff;
-  scrollbar-arrow-color: $bg-color;
-  scrollbar-shadow-color: #fff;
-  scrollbar-dark-shadow-color: #fff;
 }
 
 body {
   position: relative;
 
   height: 100vh;
+
+  &::-webkit-scrollbar {
+    width: $base-font-size / 4;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $bg-color;
+  }
 }
 
 .clearfix::after {

@@ -13,12 +13,51 @@ html
 					a(href='#').header-start__btn
 						img(src='img/svg/back-arrow.svg')
 					h2.header-start__title.text-hdr-start Выбор ресторана
-			form(action='#' method='get').form-search
-				label.btn-form.label-twosided
-					img(src='img/svg/loupe.svg')
-					input(type='text' name='restaurant' placeholder='Поиск ресторана').input
-					img(src='img/svg/cross.svg')
+			div.rest-find
+				form(action='#' method='get').form-search.rest-find__form
+					label.btn-form.label-twosided
+						img(src='img/svg/loupe.svg')
+						input(type='text' name='restaurant' placeholder='Поиск ресторана').input
+						img(src='img/svg/cross.svg')
+					ul.form-search__list.rest-find__form-list
+						li.rest-find__item.rest-name
+							a(href='#').rest-name__link.rest-name__link--form.text-sm Ресторан №1
+						li.rest-find__item.rest-name
+							a(href='#').rest-name__link.rest-name__link--form.text-sm Ресторан №2
+						li.rest-find__item.rest-name
+							a(href='#').rest-name__link.rest-name__link--form.text-sm Ресторан №3
+				ul.rest-find__list
+					li.rest-find__item.rest-name
+						a(href='#').rest-name__link.text-sm Ресторан №1
+					li.rest-find__item.rest-name
+						a(href='#').rest-name__link.text-sm Ресторан №2
+					li.rest-find__item.rest-name
+						a(href='#').rest-name__link.text-sm Ресторан №3
+					li.rest-find__item.rest-name
+						a(href='#').rest-name__link.text-sm Ресторан №4
+					li.rest-find__item.rest-name
+						a(href='#').rest-name__link.text-sm Ресторан №5
+					li.rest-find__item.rest-name
+						a(href='#').rest-name__link.text-sm Ресторан №1
+					li.rest-find__item.rest-name
+						a(href='#').rest-name__link.text-sm Ресторан №1
+					li.rest-find__item.rest-name
+						a(href='#').rest-name__link.text-sm Ресторан №1
+					li.rest-find__item.rest-name
+						a(href='#').rest-name__link.text-sm Ресторан №1
+					li.rest-find__item.rest-name
+						a(href='#').rest-name__link.text-sm Ресторан №1
+					li.rest-find__item.rest-name
+						a(href='#').rest-name__link.text-sm Ресторан №1
+					li.rest-find__item.rest-name
+						a(href='#').rest-name__link.text-sm Ресторан №1
+					li.rest-find__item.rest-name
+						a(href='#').rest-name__link.text-sm Ресторан №1
+
 
 			footer.footer-start
 				a(href='#').btn-footer-start.text-footer-start.footer-start__btn Забыли пароль
 				a(href='#').btn-footer-start.text-footer-start.footer-start__btn Регистрация
+
+		script(src='js/jquery-3.0.0.min.js')
+		script(src='js/script.js')

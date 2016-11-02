@@ -145,14 +145,6 @@ ul {
 html {
   height: 100vh;
   font-size: 16px;
-  scrollbar-face-color: #58bbc4;
-  scrollbar-track-color: #fff;
-  scrollbar-base-color: #fff;
-  scrollbar-3dlight-color: #fff;
-  scrollbar-highlight-color: #fff;
-  scrollbar-arrow-color: #58bbc4;
-  scrollbar-shadow-color: #fff;
-  scrollbar-dark-shadow-color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -166,6 +158,19 @@ body {
   height: 100vh;
 }
 
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #58bbc4;
+}
+
 .clearfix::after {
   content: '';
   display: table;
@@ -174,7 +179,7 @@ body {
 
 /*end of general*/
 /*typography*/
-.input-text, .btn-form, .text-hdr-start {
+.input-text, .btn-form, .text-hdr-start, .text-sm {
   font-family: Roboto-Regular, sans-serif;
 }
 
@@ -201,6 +206,12 @@ body {
   font-size: 0.875rem;
   color: #00828f;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  color: #224347;
   text-decoration: none;
 }
 
@@ -307,6 +318,10 @@ body {
   background: #f2f2f2;
 }
 
+.form-search__list {
+  margin: 0 -1rem -0.5rem;
+}
+
 .label-twosided {
   display: -webkit-box;
   display: -webkit-flex;
@@ -356,7 +371,7 @@ body {
 /*/forms*/
 /*footer*/
 .footer-start {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -424,4 +439,90 @@ body {
 }
 
 /*/header*/
+/*restaurant*/
+.rest-name__link {
+  display: block;
+  padding-left: 2.625rem;
+  line-height: 2.375rem;
+  position: relative;
+}
+
+.rest-name__link:hover, .rest-name__link:focus {
+  background: #f2f2f2;
+}
+
+.rest-name__link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 1.4375rem;
+  margin-top: -0.25rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  border: 0.0625rem solid #b3b3b3;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.rest-name__link--form {
+  padding-left: 1.4375rem;
+}
+
+.rest-name__link--form::before {
+  display: none;
+}
+
+.rest-name__link--form:hover, .rest-name__link--form:focus {
+  background: #e6e6e6;
+}
+
+/*/restaurant*/
+/*rest-list*/
+.rest-find {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  overflow: auto;
+}
+
+.rest-find__list {
+  padding-right: 1.25rem;
+}
+
+.rest-find__form-list {
+  display: none;
+}
+
+.rest-find--searching .rest-find__form {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+}
+
+.rest-find--searching .rest-find__form-list {
+  display: block;
+}
+
+.rest-find--searching .rest-find__list {
+  position: relative;
+}
+
+.rest-find--searching .rest-find__list::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/*/rest-list*/
 /*end of style*/
