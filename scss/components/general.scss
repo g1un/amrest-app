@@ -16,6 +16,8 @@ ul {
 html {
   height: 100vh;
 
+  overflow: hidden;
+
   font-size: 16px;
 
   @media (min-width: $width-md) {

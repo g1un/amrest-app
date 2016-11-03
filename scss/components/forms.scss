@@ -27,7 +27,7 @@
 
   &__item {
     width: 47%;
-    height: 44 / 16 * $base-font-size;
+    height: 40 / 16 * $base-font-size;
 
     svg {
       max-width: 100%;
@@ -90,12 +90,12 @@
   justify-content: space-between;
   align-items: center;
 
-  padding-right: 10 / 16 * $base-font-size;
+  padding-right: 11 / 16 * $base-font-size;
 
   svg {
-    width: 14 / 16 * $base-font-size;
+    width: 8 / 16 * $base-font-size;
 
-    margin-left: 8 / 16 * $base-font-size;
+    margin-left: 12 / 16 * $base-font-size;
 
     path {
       fill: $dark-green;
