@@ -1,0 +1,43 @@
+/*side-menu-header*/
+.side-menu-header {
+  width: 175 / 320 * 100%;
+  height: 184 / 16 * $base-font-size;
+  box-sizing: border-box;
+
+  padding: 6 / 16 * $base-font-size 12 / 16 * $base-font-size;
+
+  background: url('../img/bg-start.jpg') no-repeat 0 0;
+  background-size: auto 100%;
+
+  position: relative;
+
+  &__hide {
+    position: absolute;
+    top: 6 / 16 * $base-font-size;
+    left: 12 / 16 * $base-font-size;
+
+    width: 22 / 16 * $base-font-size;
+
+    cursor: pointer;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 10 / 16 * $base-font-size;
+    right: 12 / 16 * $base-font-size;
+
+    width: 18 / 16 * $base-font-size;
+    height: 18 / 16 * $base-font-size;
+    box-sizing: border-box;
+
+    padding: 0 5 / 16 * $base-font-size;
+
+    background: #fff;
+    border-radius: 50%;
+
+    path {
+      fill: $text-common-color;
+    }
+  }
+}
+/*/side-menu-header*/

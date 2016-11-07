@@ -1,8 +1,4 @@
-<svg id="Слой_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.7 24.2">
-    <style>
-        .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#fff}
-    </style>
-    <g id="XMLID_14_">
-        <path id="XMLID_15_" class="st0" d="M22.7 10.9H4.8l9.4-9.1L12.4 0 1.8 10.4v-.1l-.9.9-.9 1 1.8 1.7v-.1l10.7 10.4 1.8-1.7L5 13.4h17.7z"/>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="-286 408.7 22.7 24.2">
+	<path fill="#FFFFFF" d="M-263.3,419.6h-17.9l9.4-9.1l-1.8-1.8l-10.6,10.4V419l-0.9,0.9l-0.9,1l1.8,1.7v-0.1
+		l10.7,10.4l1.8-1.7l-9.3-9.1h17.7V419.6z"></path>
 </svg>
