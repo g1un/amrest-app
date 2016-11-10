@@ -1,0 +1,43 @@
+/*side-menu-list*/
+.side-menu-list {
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    padding-left: 12 / 16 * $base-font-size;
+    box-sizing: border-box;
+    height: 23 / 16 * $base-font-size;
+
+    border-bottom: 1 / 16 * $base-font-size solid $btn-hover-color-dark;
+
+    text-transform: uppercase;
+
+    svg {
+      width: 10 / 16 * $base-font-size;
+
+      margin-right: 10 / 16 * $base-font-size;
+
+      path {
+        fill: $text-common-color;
+      }
+    }
+    
+    &:focus,
+    &:hover{
+      color: #fff;
+
+      background: $side-menu-green;
+
+      border-color: $side-menu-green;
+
+      svg {
+
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+}
+/*/side-menu-list*/

@@ -7,6 +7,9 @@ $width-md: 768px;
 /*font-size*/
 $base-font-size: 1rem;
 $sm-font-size: 14 / 16 * $base-font-size;
+$xs-font-size: 12 / 16 * $base-font-size;
+$font-size-11: 11 / 16 * $base-font-size;
+$xxs-font-size: 10 / 16 * $base-font-size;
 //font-size*/
 
 /*font-family*/
@@ -24,6 +27,8 @@ $input-color: #00828f;
 $dark-green: #006064;
 $hdr-start-color: #caeef1;
 $bg-color: #58bbc4;
+$side-menu-green: #59acb4;
+$bg-color-light: #80cbc4;
 $footer-start-btn-hover: #54999b;
 $big-btn-color: #53759a;
 $big-btn-color-login: rgba(83,117,154,.7);
