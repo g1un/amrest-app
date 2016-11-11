@@ -1,0 +1,63 @@
+doctype html
+html
+    head
+        title «Amrest-app»
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width")
+        link(rel='stylesheet', type='text/css', href='css/normalize.css')
+        link(rel='stylesheet', type='text/css', href='css/style.css')
+    body
+        ul.activity-list
+            li.activity-list__item
+                a(href='#').activity-list__link.activity-list__link--active
+                    img(src='img/svg/id.svg' alt='id').activity-list__icon
+            li.activity-list__item
+                a(href='#').activity-list__link
+                    img(src='img/svg/bookmark.svg' alt='bookmark').activity-list__icon
+            li.activity-list__item
+                a(href='#').activity-list__link
+                    img(src='img/svg/develop.svg' alt='develop').activity-list__icon
+            li.activity-list__item
+                a(href='#').activity-list__link
+                    img(src='img/svg/graph.svg' alt='graph').activity-list__icon
+            li.activity-list__item
+                a(href='#').activity-list__link
+                    img(src='img/svg/calendar.svg' alt='calendar').activity-list__icon
+            li.activity-list__item
+                a(href='#').activity-list__link
+                    img(src='img/svg/medal.svg' alt='medal').activity-list__icon
+
+        section.layout-middle
+            div.activity-stats
+                h2.activity-stats__title
+                ul.activity-stats__list
+                    li.activity-stats__item.activity-data-item
+                        div.percent-circle(data-pct="100")
+                            svg.percent-circle__svg(width="108", height="108", viewPort="0 0 54 54", version="1.1", xmlns="http://www.w3.org/2000/svg")
+                                circle.percent-circle__bg(r="51", cx="54", cy="54", fill="transparent", stroke-dasharray="320.44", stroke-dashoffset="0")
+                                circle.percent-circle__bar(r="51", cx="54", cy="54", fill="transparent", stroke-dasharray="320.44", stroke-dashoffset="0")
+                            input.percent-circle__input(name="percent", style='display: none;')
+                            svg.percent-circle__svg.percent-circle__svg--md(width="216", height="216", viewPort="0 0 108 108", version="1.1", xmlns="http://www.w3.org/2000/svg")
+                                circle.percent-circle__bg(r="102", cx="108", cy="108", fill="transparent", stroke-dasharray="640.88", stroke-dashoffset="0")
+                                circle.percent-circle__bar(r="102", cx="108", cy="108", fill="transparent", stroke-dasharray="640.88", stroke-dashoffset="0")
+                            input.percent-circle__input(name="percent", style='display: none;')
+                        span.activity-data-item__string 09 сентября
+                        span.activity-data-item__string Результат RCL
+                        span.activity-data-item__string CREW -> Инструктор
+
+
+        ul.activity-footer
+            li.activity-footer__item
+                a(href='#').activity-footer__link
+                    img(src='img/svg/support.svg' alt='support').activity-footer__icon.activity-footer__icon--support
+            li.activity-footer__item
+                a(href='#').activity-footer__link
+                    img(src='img/svg/rss.svg' alt='rss').activity-footer__icon.activity-footer__icon--rss
+                    span.text-xs.black.activity-footer__notification 5
+            li.activity-footer__item
+                a(href='#').activity-footer__link
+                    img(src='img/svg/bell.svg' alt='bell').activity-footer__icon.activity-footer__icon--notify
+                    span.text-xs.black.activity-footer__notification 3
+
+        script(src='js/jquery-3.0.0.min.js')
+        script(src='js/script.js')

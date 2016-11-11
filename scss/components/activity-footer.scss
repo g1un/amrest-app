@@ -1,0 +1,63 @@
+/*activity-footer*/
+.activity-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 50 / 16 * $base-font-size;
+  padding: 0 14 / 16 * $base-font-size;
+
+  background: $light-green;
+
+  &__link {
+    width: 38 / 16 * $base-font-size;
+    height: 38 / 16 * $base-font-size;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    background: $hdr-start-color;
+
+    border-radius: 50%;
+  }
+
+  &__icon {
+
+    &--support {
+      width: 20 / 16 * $base-font-size;
+    }
+
+    &--rss {
+      width: 13 / 16 * $base-font-size;
+    }
+
+    &--notify {
+      width: $base-font-size;
+    }
+  }
+
+  &__notification {
+    display: block;
+
+    position: absolute;
+    top: 6 / 16 * $base-font-size;
+    right: -10 / 16 * $base-font-size;
+
+    width: 17 / 16 * $base-font-size;
+
+    line-height: 17 / 16 * $base-font-size;
+    text-align: center;
+
+    border-radius: 50%;
+    background: #fff;
+  }
+}
+/*/activity-footer*/

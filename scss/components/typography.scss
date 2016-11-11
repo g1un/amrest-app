@@ -3,10 +3,6 @@
   font-family: $roboto-reg;
 }
 
-.ttu {
-  text-transform: uppercase;
-}
-
 .text-main {
   font-family: $roboto-reg;
   font-size: $base-font-size;
@@ -78,5 +74,15 @@
   font-size: $font-size-11;
   color: $bg-color-light;
   text-decoration: none;
+}
+
+//decoration
+.ttu {
+  text-transform: uppercase;
+}
+
+//colors
+.black {
+  color: #000;
 }
 /*end of typography*/

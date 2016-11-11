@@ -1,0 +1,53 @@
+/*activity-list*/
+.activity-list {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 47 / 16 * $base-font-size;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  overflow-y: scroll;
+
+  background: $footer-start-btn-hover;
+
+  &__item {
+    margin: 0 10 / 16 *$base-font-size;
+
+    height: inherit;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60 / 16 * $base-font-size;
+    height: inherit;
+    box-sizing: border-box;
+
+    &--active,
+    &:focus,
+    &:hover{
+      border-top: 4 / 16 * $base-font-size solid transparent;
+      border-bottom: 4 / 16 * $base-font-size solid $text-common-color;
+    }
+  }
+
+  &__icon {
+    height: 20 / 16 * $base-font-size;
+  }
+}
+/*/activity-list*/

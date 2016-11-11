@@ -26,7 +26,7 @@ gulp.task('sass', function(){
   }))
 });
 
-var currentIndex = 'side-menu';
+var currentIndex = 'activity';
 
 gulp.task('jade', function(){
   return gulp.src('*.jade')

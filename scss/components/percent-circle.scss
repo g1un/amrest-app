@@ -1,0 +1,62 @@
+/*percent-circle*/
+.percent-circle {
+  display: block;
+  height: 108 / 16 * $base-font-size;
+  width: 108 / 16 * $base-font-size;
+  border-radius: 100%;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    display: block;
+    height: 100 / 16 * $base-font-size;
+    width: 100 / 16 * $base-font-size;
+    left: 50%;
+    top: 50%;
+    content: attr(data-pct)"%";
+    margin-top: -50px;
+    margin-left: -50px;
+    border-radius: 100%;
+    line-height: 100 / 16 * $base-font-size;
+    text-align: center;
+  }
+
+  &__svg {
+
+    &--md {
+      display: none;
+    }
+  }
+
+  &__bg {
+    stroke-dashoffset: 0;
+    stroke: $btn-hover-color-dark;
+    stroke-width: 6 / 16 * $base-font-size;
+  }
+
+  &__bar {
+    stroke: $stats-green;
+
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 1s linear;
+    stroke-width: 6 / 16 * $base-font-size;
+
+    transform-origin: 50%;
+    transform: rotate(90deg);
+  }
+
+  @media (min-width: $width-md) {
+
+    .percent-circle {
+
+      &__svg {
+        display: none;
+
+        &--md {
+          display: block;
+        }
+      }
+    }
+  }
+}
+/*/percent-circle*/

@@ -27,4 +27,11 @@
     margin-bottom: .875 * $base-font-size;
   }
 }
+
+.layout-middle {
+  padding: 47 / 16 * $base-font-size 18 / 16 * $base-font-size 50 / 16 * $base-font-size;
+  box-sizing: border-box;
+
+  height: 100vh;
+}
 /*end of layout*/
