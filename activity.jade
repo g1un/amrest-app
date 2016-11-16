@@ -27,11 +27,31 @@ html
                 a(href='#').activity-list__link
                     img(src='img/svg/medal.svg' alt='medal').activity-list__icon
 
-        section.layout-middle
+        section.layout-middle.layout-bg-light
             div.activity-stats
-                h2.activity-stats__title
+                h2.text-bold.ttu.green-dark.activity-stats__title Обучение
                 ul.activity-stats__list
                     li.activity-stats__item.activity-data-item
+                        div.activity-data-item__wrapper
+                            div.text-sm.activity-data-item__string <span class='fz-25'>09</span> Сентября
+                            div.text-bold-15.green.activity-data-item__string Результат RCL
+                            div.text-bold-13.purple-dark.ttu.activity-data-item__string CREW -> Инструктор
+                        div.percent-circle(data-pct="100")
+                            svg.percent-circle__svg(width="108", height="108", viewPort="0 0 54 54", version="1.1", xmlns="http://www.w3.org/2000/svg")
+                                circle.percent-circle__bg(r="51", cx="54", cy="54", fill="transparent", stroke-dasharray="320.44", stroke-dashoffset="0")
+                                circle.percent-circle__bar(r="51", cx="54", cy="54", fill="transparent", stroke-dasharray="160.221", stroke-dashoffset="0")
+                            div.text-48.green-dark.percent-circle__value
+                                input.percent-circle__input(name="percent", style='display: none;')
+                                span.text-24 %
+                            svg.percent-circle__svg.percent-circle__svg--md(width="216", height="216", viewPort="0 0 108 108", version="1.1", xmlns="http://www.w3.org/2000/svg")
+                                circle.percent-circle__bg(r="102", cx="108", cy="108", fill="transparent", stroke-dasharray="640.88", stroke-dashoffset="0")
+                                circle.percent-circle__bar(r="102", cx="108", cy="108", fill="transparent", stroke-dasharray="640.88", stroke-dashoffset="0")
+                            input.percent-circle__input(name="percent", style='display: none;')
+                    li.activity-stats__item.activity-data-item
+                        div.activity-data-item__wrapper
+                            div.text-sm.activity-data-item__string <span class='fz-25'>09</span> Сентября
+                            div.text-bold-15.green.activity-data-item__string Результат RCL
+                            div.text-bold-13.purple-dark.ttu.activity-data-item__string CREW -> Инструктор
                         div.percent-circle(data-pct="100")
                             svg.percent-circle__svg(width="108", height="108", viewPort="0 0 54 54", version="1.1", xmlns="http://www.w3.org/2000/svg")
                                 circle.percent-circle__bg(r="51", cx="54", cy="54", fill="transparent", stroke-dasharray="320.44", stroke-dashoffset="0")
@@ -41,9 +61,26 @@ html
                                 circle.percent-circle__bg(r="102", cx="108", cy="108", fill="transparent", stroke-dasharray="640.88", stroke-dashoffset="0")
                                 circle.percent-circle__bar(r="102", cx="108", cy="108", fill="transparent", stroke-dasharray="640.88", stroke-dashoffset="0")
                             input.percent-circle__input(name="percent", style='display: none;')
-                        span.activity-data-item__string 09 сентября
-                        span.activity-data-item__string Результат RCL
-                        span.activity-data-item__string CREW -> Инструктор
+                            div.text-48.green-dark.percent-circle__value
+                                |99
+                                span.text-24 %
+                    li.activity-stats__item.activity-data-item
+                        div.activity-data-item__wrapper
+                            div.text-sm.activity-data-item__string <span class='fz-25'>09</span> Сентября
+                            div.text-bold-15.green.activity-data-item__string Результат RCL
+                            div.text-bold-13.purple-dark.ttu.activity-data-item__string CREW -> Инструктор
+                        div.percent-circle(data-pct="100")
+                            svg.percent-circle__svg(width="108", height="108", viewPort="0 0 54 54", version="1.1", xmlns="http://www.w3.org/2000/svg")
+                                circle.percent-circle__bg(r="51", cx="54", cy="54", fill="transparent", stroke-dasharray="320.44", stroke-dashoffset="0")
+                                circle.percent-circle__bar(r="51", cx="54", cy="54", fill="transparent", stroke-dasharray="320.44", stroke-dashoffset="0")
+                            input.percent-circle__input(name="percent", style='display: none;')
+                            svg.percent-circle__svg.percent-circle__svg--md(width="216", height="216", viewPort="0 0 108 108", version="1.1", xmlns="http://www.w3.org/2000/svg")
+                                circle.percent-circle__bg(r="102", cx="108", cy="108", fill="transparent", stroke-dasharray="640.88", stroke-dashoffset="0")
+                                circle.percent-circle__bar(r="102", cx="108", cy="108", fill="transparent", stroke-dasharray="640.88", stroke-dashoffset="0")
+                            input.percent-circle__input(name="percent", style='display: none;')
+                            div.text-48.green-dark.percent-circle__value
+                                |99
+                                span.text-24 %
 
 
         ul.activity-footer

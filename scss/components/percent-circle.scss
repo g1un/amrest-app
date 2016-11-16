@@ -6,19 +6,25 @@
   border-radius: 100%;
   position: relative;
 
-  &::after {
+  &__value {
     position: absolute;
-    display: block;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     height: 100 / 16 * $base-font-size;
     width: 100 / 16 * $base-font-size;
+
     left: 50%;
     top: 50%;
-    content: attr(data-pct)"%";
+
     margin-top: -50px;
     margin-left: -50px;
+
     border-radius: 100%;
+
     line-height: 100 / 16 * $base-font-size;
-    text-align: center;
   }
 
   &__svg {
@@ -31,7 +37,7 @@
   &__bg {
     stroke-dashoffset: 0;
     stroke: $btn-hover-color-dark;
-    stroke-width: 6 / 16 * $base-font-size;
+    stroke-width: 6 / 16 * 1em;
   }
 
   &__bar {
@@ -39,7 +45,7 @@
 
     stroke-dashoffset: 0;
     transition: stroke-dashoffset 1s linear;
-    stroke-width: 6 / 16 * $base-font-size;
+    stroke-width: 6 / 16 * 1em;
 
     transform-origin: 50%;
     transform: rotate(90deg);

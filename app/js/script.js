@@ -13,7 +13,6 @@ if($('[name="restaurant"]').length) {
 if($('.percent-circle__input').length) {
 	$('.percent-circle__input').on('change', function(){
 		var val = parseInt($(this).val());
-		// var $circle = $('.percent-circle__bar');
 		var $circle =  $(this).prev().children('.percent-circle__bar');
 
 		console.log($circle);
@@ -32,7 +31,9 @@ if($('.percent-circle__input').length) {
 
 			$circle.css({ strokeDashoffset: pct});
 
-			$circle.closest('.percent-circle').attr('data-pct',val);
+			$circle.closest('.percent-circle')
+				.attr('data-pct',val)
+				.children('.percent-circle__value').text(val + '%');
 		}
 	});
 }

@@ -3,6 +3,10 @@
   font-family: $roboto-reg;
 }
 
+%bold-text {
+  font-family: $roboto-bold;
+}
+
 .text-main {
   font-family: $roboto-reg;
   font-size: $base-font-size;
@@ -26,7 +30,7 @@
 }
 
 .text-big-btn {
-  font-family: $roboto-reg;
+  @extend %common-text;
   font-size: 17 / 16 * $base-font-size;
   line-height: 1.2em;
   color: #fff;
@@ -76,6 +80,35 @@
   text-decoration: none;
 }
 
+.text-24 {
+  @extend %common-text;
+  font-size: $font-size-24;
+  text-decoration: none;
+}
+
+.text-48 {
+  @extend %common-text;
+  font-size: $font-size-48;
+  text-decoration: none;
+}
+
+.text-bold-13 {
+  @extend %bold-text;
+  font-size: $font-size-13;
+  text-decoration: none;
+}
+
+.text-bold-15 {
+  @extend %bold-text;
+  font-size: $font-size-15;
+  text-decoration: none;
+}
+
+.text-bold {
+  @extend %bold-text;
+  font-size: $base-font-size;
+}
+
 //decoration
 .ttu {
   text-transform: uppercase;
@@ -85,4 +118,21 @@
 .black {
   color: #000;
 }
-/*end of typography*/
+
+.green-dark {
+  color: $text-common-color;
+}
+
+.green {
+  color: $footer-start-btn-hover;
+}
+
+.purple-dark {
+  color: $purple-dark;
+}
+
+//font-size
+.fz-25 {
+  font-size: 25px;
+}
+/*/typography*/

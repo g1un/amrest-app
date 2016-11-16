@@ -1,0 +1,16 @@
+/*activity-data-item*/
+.activity-data-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  &__string {
+    margin-bottom: 5 / 16 * $base-font-size;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+/*/activity-data-item*/

@@ -1,5 +1,24 @@
 /*activity-stats*/
 .activity-stats {
+  padding-top: 15 / 16 * $base-font-size;
 
+  max-height: 100%;
+  box-sizing: border-box;
+
+  overflow: auto;
+
+  &__title {
+    margin-bottom: 10 / 16 * $base-font-size;
+
+    text-align: center;
+  }
+
+  &__item {
+    margin-bottom: 14 / 16 * $base-font-size;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 /*/activity-stats*/
