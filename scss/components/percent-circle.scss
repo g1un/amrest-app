@@ -1,17 +1,16 @@
 /*percent-circle*/
 .percent-circle {
   display: block;
+
   height: 108 / 16 * $base-font-size;
   width: 108 / 16 * $base-font-size;
+
   border-radius: 100%;
+
   position: relative;
 
   &__value {
     position: absolute;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     height: 100 / 16 * $base-font-size;
     width: 100 / 16 * $base-font-size;
@@ -19,12 +18,65 @@
     left: 50%;
     top: 50%;
 
-    margin-top: -50px;
-    margin-left: -50px;
+    margin-top: -50 / 16 * $base-font-size;
+    margin-left: -50 / 16 * $base-font-size;
+
+    text-align: center;
+    @extend .green-dark;
 
     border-radius: 100%;
 
-    line-height: 100 / 16 * $base-font-size;
+    &::before {
+      content: attr(data-pct);
+
+      display: inline-block;
+      vertical-align: top;
+
+      line-height: 100 / 16 * $base-font-size;
+
+      @extend .text-48;
+    }
+
+    &::after {
+      content: '%';
+
+      display: inline-block;
+      vertical-align: top;
+
+      line-height: 100 / 16 * $base-font-size;
+
+      @extend .text-24;
+    }
+
+    &--abs {
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &--text {
+
+      &::before {
+        font-family: $roboto-bold;
+        font-size: 25/ 16 * $base-font-size;
+        text-transform: uppercase;
+      }
+
+      color: $stats-green;
+    }
+
+    &--text-2x {
+
+      &::before {
+        font-family: $roboto-reg;
+        font-size: 50 / 16 * $base-font-size;
+      }
+    }
+  }
+
+  &__input {
+    display: none;
   }
 
   &__svg {
@@ -49,6 +101,34 @@
 
     transform-origin: 50%;
     transform: rotate(90deg);
+  }
+
+  &--blue {
+
+    .percent-circle {
+
+      &__bar {
+        stroke: $percent-blue;
+      }
+
+      &__value--text {
+        color: $percent-blue;
+      }
+    }
+  }
+
+  &--violet {
+
+    .percent-circle {
+
+      &__bar {
+        stroke: $percent-violet;
+      }
+
+      &__value--text {
+        color: $percent-violet;
+      }
+    }
   }
 
   @media (min-width: $width-md) {

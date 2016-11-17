@@ -1,14 +1,15 @@
 /*side-menu*/
 .side-menu {
   width: 175 / 320 * 100%;
+  min-width: 0;
 
   box-shadow: 6 / 16 * $base-font-size 0 6 / 16 * $base-font-size 0 rgba(0,0,0,.25);
 
-  &__slogan {
-    line-height: 22 / 16 *$base-font-size;
-    text-align: center;
+  &__container {
+    max-height: 100%;
+    box-sizing: border-box;
 
-    background: $dark-green;
+    overflow: auto;
   }
 
   &__title {

@@ -26,42 +26,54 @@ html
             li.activity-list__item
                 a(href='#').activity-list__link
                     img(src='img/svg/medal.svg' alt='medal').activity-list__icon
+
         section.layout-middle.layout-bg-light
             div.activity-stats
                 h2.text-bold.ttu.green-dark.activity-stats__title Обучение
                 ul.activity-stats__list
                     li.activity-stats__item.activity-data-item
                         div.activity-data-item__wrapper
-                            div.text-bold-15.green.activity-data-item__string Наполненность профиля
-                        div.percent-circle.percent-circle--violet
-                            div.percent-circle__value(data-pct="100")
+                            div.text-sm.activity-data-item__string <span class='fz-25'>09</span> Сентября
+                            div.text-bold-15.green.activity-data-item__string Результат RCL
+                            div.text-bold-13.purple-dark.ttu.activity-data-item__string CREW -> Инструктор
+                        div.percent-circle.percent-circle--blue
+                            div.percent-circle__value.percent-circle__value--abs.percent-circle__value--text.percent-circle__value--text-2x(data-pct="100")
                             svg.percent-circle__svg(width="108", height="108", viewPort="0 0 54 54", version="1.1", xmlns="http://www.w3.org/2000/svg")
                                 circle.percent-circle__bg(r="51", cx="54", cy="54", fill="transparent", stroke-dasharray="320.44", stroke-dashoffset="0")
                                 circle.percent-circle__bar(r="51", cx="54", cy="54", fill="transparent", stroke-dasharray="320.44", stroke-dashoffset="0")
                             svg.percent-circle__svg.percent-circle__svg--md(width="216", height="216", viewPort="0 0 108 108", version="1.1", xmlns="http://www.w3.org/2000/svg")
                                 circle.percent-circle__bg(r="102", cx="108", cy="108", fill="transparent", stroke-dasharray="640.88", stroke-dashoffset="0")
                                 circle.percent-circle__bar(r="102", cx="108", cy="108", fill="transparent", stroke-dasharray="640.88", stroke-dashoffset="0")
-                            input.percent-circle__input(name="percent", value='50')
+                            input.percent-circle__input.js-percent-input-text(name="percent", value='r1')
                     li.activity-stats__item.activity-data-item
                         div.activity-data-item__wrapper
-                            div.text-bold-15.green.activity-data-item__string Индекс активности
-                        div.percent-circle.percent-circle--violet
-                            div.percent-circle__value.percent-circle__value--abs(data-pct="100")
+                            div.text-sm.activity-data-item__string <span class='fz-25'>09</span> Сентября
+                            div.text-bold-15.green.activity-data-item__string Результат RCL
+                            div.text-bold-13.purple-dark.ttu.activity-data-item__string CREW -> Инструктор
+                        div.percent-circle
+                            div.percent-circle__value.percent-circle__value--abs.percent-circle__value--text(data-pct="100")
                             svg.percent-circle__svg(width="108", height="108", viewPort="0 0 54 54", version="1.1", xmlns="http://www.w3.org/2000/svg")
                                 circle.percent-circle__bg(r="51", cx="54", cy="54", fill="transparent", stroke-dasharray="320.44", stroke-dashoffset="0")
                                 circle.percent-circle__bar(r="51", cx="54", cy="54", fill="transparent", stroke-dasharray="320.44", stroke-dashoffset="0")
                             svg.percent-circle__svg.percent-circle__svg--md(width="216", height="216", viewPort="0 0 108 108", version="1.1", xmlns="http://www.w3.org/2000/svg")
                                 circle.percent-circle__bg(r="102", cx="108", cy="108", fill="transparent", stroke-dasharray="640.88", stroke-dashoffset="0")
                                 circle.percent-circle__bar(r="102", cx="108", cy="108", fill="transparent", stroke-dasharray="640.88", stroke-dashoffset="0")
-                            input.percent-circle__input(name="percent", value='10')
+                            input.percent-circle__input.js-percent-input-text(name="percent", value='готов')
                     li.activity-stats__item.activity-data-item
                         div.activity-data-item__wrapper
-                            div.text-bold-15.green.activity-data-item__string Последнее обновление профиля
-                        div.activity-data-item__date.activity-date
-                            div.common-text.fz-36.green-dark.activity-date__day 31
-                            div.activity-date__wrapper
-                                div.text-main.green-dark.activity-date__month февраля
-                                div.text-11.green-dark.activity-date__weekday вторник
+                            div.text-sm.activity-data-item__string <span class='fz-25'>09</span> Сентября
+                            div.text-bold-15.green.activity-data-item__string Результат RCL
+                            div.text-bold-13.purple-dark.ttu.activity-data-item__string CREW -> Инструктор
+                        div.percent-circle.percent-circle--blue
+                            div.percent-circle__value.percent-circle__value--abs.percent-circle__value--text.percent-circle__value--text-2x(data-pct="100")
+                            svg.percent-circle__svg(width="108", height="108", viewPort="0 0 54 54", version="1.1", xmlns="http://www.w3.org/2000/svg")
+                                circle.percent-circle__bg(r="51", cx="54", cy="54", fill="transparent", stroke-dasharray="320.44", stroke-dashoffset="0")
+                                circle.percent-circle__bar(r="51", cx="54", cy="54", fill="transparent", stroke-dasharray="320.44", stroke-dashoffset="0")
+                            svg.percent-circle__svg.percent-circle__svg--md(width="216", height="216", viewPort="0 0 108 108", version="1.1", xmlns="http://www.w3.org/2000/svg")
+                                circle.percent-circle__bg(r="102", cx="108", cy="108", fill="transparent", stroke-dasharray="640.88", stroke-dashoffset="0")
+                                circle.percent-circle__bar(r="102", cx="108", cy="108", fill="transparent", stroke-dasharray="640.88", stroke-dashoffset="0")
+                            input.percent-circle__input.js-percent-input-text(name="percent", value='r2')
+
         ul.activity-footer
             li.activity-footer__item
                 a(href='#').activity-footer__link

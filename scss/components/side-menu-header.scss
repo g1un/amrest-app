@@ -1,11 +1,15 @@
 /*side-menu-header*/
 .side-menu-header {
-  padding: 6 / 16 * $base-font-size 12 / 16 * $base-font-size;
+  width: 175 / 320 * 100%;
+  box-sizing: border-box;
+
+  padding: 6 / 16 * $base-font-size 12 / 16 * $base-font-size 0;
 
   background: url('../img/bg-start.jpg') no-repeat 0 0;
   background-size: cover;
 
-  position: relative;
+  position: fixed;
+  top: 0;
 
   &__hide {
     position: absolute;
@@ -56,6 +60,15 @@
     margin-bottom: 8 / 16 * $base-font-size;
 
     text-align: center;
+  }
+
+  &__slogan {
+    margin: 0 -12 / 16 * $base-font-size;
+
+    line-height: 22 / 16 *$base-font-size;
+    text-align: center;
+
+    background: $dark-green;
   }
 }
 /*/side-menu-header*/

@@ -16,6 +16,8 @@
   &__item {
     margin-bottom: 14 / 16 * $base-font-size;
 
+    line-height: 0;
+
     &:last-child {
       margin-bottom: 0;
     }

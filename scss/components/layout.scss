@@ -35,6 +35,14 @@
   height: 100vh;
 }
 
+.layout-side-menu {
+  padding-top: 163 / 16 * $base-font-size;
+  padding-bottom: 50 / 16 * $base-font-size;
+  box-sizing: border-box;
+
+  height: 100vh;
+}
+
 .layout-bg-light {
   background: transparent url(../img/bg-activity.jpg) no-repeat center center;
   background-size: cover;

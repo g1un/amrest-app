@@ -26,8 +26,6 @@ gulp.task('sass', function(){
   }))
 });
 
-var currentIndex = 'activity';
-
 gulp.task('jade', function(){
   return gulp.src('*.jade')
     .pipe(jade({
@@ -88,7 +86,7 @@ gulp.task('browserSync', function() {
   browserSync.init({
     server: {
       baseDir: 'app',
-      index: currentIndex + '.html'
+      index: 'activity-develop.html'
     }
   })
 });

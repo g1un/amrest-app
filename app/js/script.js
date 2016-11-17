@@ -10,13 +10,11 @@ if($('[name="restaurant"]').length) {
 }
 
 //percent-circle
-if($('.percent-circle__input').length) {
-	$('.percent-circle__input').on('change', function(){
-		var val = parseInt($(this).val());
-		var $circle =  $(this).prev().children('.percent-circle__bar');
+//percent-circle
+if($('.percent-circle').length) {
+	var percentInput = $('.percent-circle__input');
 
-		console.log($circle);
-
+	function countCircle(val, $circle) {
 		if (isNaN(val)) {
 			val = 100;
 		}
@@ -29,11 +27,25 @@ if($('.percent-circle__input').length) {
 
 			var pct = ((100-val)/100)*c;
 
-			$circle.css({ strokeDashoffset: pct});
+			$circle.css({strokeDashoffset: pct});
 
-			$circle.closest('.percent-circle')
-				.attr('data-pct',val)
-				.children('.percent-circle__value').text(val + '%');
+			$circle.closest('.percent-circle').children('.percent-circle__value').attr('data-pct',val);
+		}
+	}
+
+	percentInput.each(function () {
+		if($(this).hasClass('js-percent-input-text')) {
+			$(this).parent().children('.percent-circle__value').attr('data-pct', $(this).val());
+		} else {
+			countCircle(parseInt($(this).val()), $(this).parent().find('.percent-circle__bar'));
+		}
+	});
+
+	percentInput.on('input', function(){
+		if($(this).hasClass('js-percent-input-text')) {
+			$(this).parent().children('.percent-circle__value').attr('data-pct', $(this).val());
+		} else {
+			countCircle(parseInt($(this).val()), $(this).parent().find('.percent-circle__bar'));
 		}
 	});
 }

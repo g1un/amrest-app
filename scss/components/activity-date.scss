@@ -1,0 +1,11 @@
+/*activity-date*/
+.activity-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__wrapper {
+    margin-right: 6 / 16 * $base-font-size;
+  }
+}
+/*/activity-date*/
