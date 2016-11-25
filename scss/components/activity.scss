@@ -1,0 +1,117 @@
+/*activity-stats*/
+.activity {
+  padding: 15 / 16 * $base-font-size 0;
+
+  max-height: 100%;
+  box-sizing: border-box;
+
+  overflow: auto;
+
+  &__title {
+    margin-bottom: 10 / 16 * $base-font-size;
+
+    text-align: center;
+  }
+
+  &__progress-bar {
+    padding-top: 58 / 16 * $base-font-size;
+
+    margin-bottom: 20px;
+  }
+
+  &__warning {
+    margin-bottom: 55 / 16 * $base-font-size;
+    padding-left: 32 / 16 * $base-font-size;
+
+    text-align: left;
+
+    position: relative;
+
+    &::before {
+      content: '!';
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 20 / 16 * $base-font-size;
+      height: 20 / 16 * $base-font-size;
+
+      @extend .fz-12;
+      @extend .white;
+      line-height: 20 / 16 * $base-font-size;
+      text-align: center;
+
+      border-radius: 50%;
+      background: $percent-violet;
+    }
+  }
+
+  &__text {
+    margin: 20px 0;
+
+    text-align: center;
+  }
+
+  &__title-btn {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 22 / 16 * $base-font-size;
+    height: 22 / 16 * $base-font-size;
+
+    margin-left: 7 / 16 * $base-font-size;
+
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: $stats-green;
+
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -1 / 16 * $base-font-size;
+      margin-left: -4 / 16 * $base-font-size;
+
+      width: 8 / 16 * $base-font-size;
+      height: 2 / 16 * $base-font-size;
+
+      background: #fff;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -4 / 16 * $base-font-size;
+      margin-left: -1 / 16 * $base-font-size;
+
+      width: 2 / 16 * $base-font-size;
+      height: 8 / 16 * $base-font-size;
+
+      background: #fff;
+    }
+  }
+
+  &__dates {
+    margin-top: 45 / 16 * $base-font-size;
+    margin-bottom: 25 / 16 * $base-font-size;
+  }
+
+  &__dates-item {
+    margin-bottom: 15 / 16 * $base-font-size;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__events-number {
+    text-align: center;
+  }
+}
+/*/activity-stats*/

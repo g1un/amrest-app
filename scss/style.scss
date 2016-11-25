@@ -17,12 +17,14 @@
 @import "components/rest-find";
 @import "components/password-message";
 @import "components/register";
+@import "components/progress-bar";
 
 @import "components/side-menu";
 @import "components/side-menu-header";
 @import "components/side-menu-list";
 @import "components/side-menu-footer";
 
+@import "components/activity";
 @import "components/activity-list";
 @import "components/activity-footer";
 
@@ -30,4 +32,6 @@
 @import "components/activity-stats";
 @import "components/activity-data-item";
 @import "components/activity-date";
+@import "components/activity-progress";
+@import "components/date";
 /*end of style*/

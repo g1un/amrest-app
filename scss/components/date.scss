@@ -1,0 +1,48 @@
+/*date*/
+.date {
+  position: relative;
+
+  &__value {
+    float: left;
+
+    width: 76 / 16 * $base-font-size;
+    box-sizing: border-box;
+    padding-top: 5 / 16 * $base-font-size;
+
+    border: 1 / 16 * $base-font-size solid $footer-start-btn-hover;
+    border-radius: 2 / 16 * $base-font-size;
+    background: #fff;
+
+    text-align: center;
+  }
+
+  &__week-day {
+    line-height: 23 / 16 * $base-font-size;
+
+    background: $light-green;
+  }
+
+  &__event {
+    padding-top: 6 / 16 * $base-font-size;
+    margin-left: 89 / 16 * $base-font-size;
+
+    max-height: 42 / 16 * $base-font-size;
+
+    overflow: hidden;
+  }
+
+  &__countdown {
+    position: absolute;
+    bottom: 0;
+    left: 89 / 16 * $base-font-size;
+
+    height: 26 / 16 * $base-font-size;
+    padding: 0 12 / 16 * $base-font-size;
+
+    border-radius: 13 / 16 * $base-font-size;
+    background: $color-kashmir-blue;
+
+    text-align: center;
+  }
+}
+/*/date*/

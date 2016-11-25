@@ -84,4 +84,24 @@
     box-shadow: 5 / 16 * $base-font-size 5 / 16 * $base-font-size 5 / 16 * $base-font-size 0 rgba(0,0,0,.25);
   }
 }
+
+.btn-simple-green {
+  @include btn(
+    0,
+    0,
+    $input-color,
+    $footer-start-btn-hover,
+    0,
+    transparent,
+    0,
+    26 / 16 * $base-font-size
+  );
+  text-align: center;
+
+  display: block;
+  width: 116 / 16 * $base-font-size;
+  margin: 0 auto;
+
+  box-shadow: 3 / 16 * $base-font-size 3 / 16 * $base-font-size 3 / 16 * $base-font-size 0 rgba(0,0,0,.25) ;
+}
 /*end of button*/

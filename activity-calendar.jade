@@ -1,0 +1,75 @@
+doctype html
+html
+    head
+        title «Amrest-app»
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width")
+        link(rel='stylesheet', type='text/css', href='css/normalize.css')
+        link(rel='stylesheet', type='text/css', href='css/style.css')
+    body
+        ul.activity-list
+            li.activity-list__item
+                a(href='#').activity-list__link
+                    img(src='img/svg/id.svg' alt='id').activity-list__icon
+            li.activity-list__item
+                a(href='#').activity-list__link
+                    img(src='img/svg/bookmark.svg' alt='bookmark').activity-list__icon
+            li.activity-list__item
+                a(href='#').activity-list__link
+                    img(src='img/svg/develop.svg' alt='develop').activity-list__icon
+            li.activity-list__item
+                a(href='#').activity-list__link
+                    img(src='img/svg/graph.svg' alt='graph').activity-list__icon
+            li.activity-list__item
+                a(href='#').activity-list__link.activity-list__link--active
+                    img(src='img/svg/calendar.svg' alt='calendar').activity-list__icon
+            li.activity-list__item
+                a(href='#').activity-list__link
+                    img(src='img/svg/medal.svg' alt='medal').activity-list__icon
+
+        section.layout-middle.layout-bg-light
+            div.activity
+                h2.text-bold.ttu.green-dark.activity__title Запланируй событие
+                    button(type='button').activity__title-btn
+                ul.activity__dates
+                    li.clearfix.date.activity__dates-item
+                        div.date__value
+                            div.common-text.fz-14.green.date__month Сентября
+                            div.common-text.fz-30.green.date__day 18
+                            div.common-text.fz-11.green.date__week-day Вторник
+                        p.text-xs.date__event День Рождения Анастасии Федоровой
+                        div.common-text.fz-10.white.date__countdown Осталось
+                            div.date__countdown-value 20 дней
+                    li.clearfix.date.activity__dates-item
+                        div.date__value
+                            div.common-text.fz-14.green.date__month Сентября
+                            div.common-text.fz-30.green.date__day 22
+                            div.common-text.fz-11.green.date__week-day Вторник
+                        p.text-xs.date__event Корпоративное мероприятие
+                        div.common-text.fz-10.white.date__countdown Осталось
+                            div.date__countdown-value 20 дней
+                    li.clearfix.date.activity__dates-item
+                        div.date__value
+                            div.common-text.fz-14.green.date__month Сентября
+                            div.common-text.fz-30.green.date__day 25
+                            div.common-text.fz-11.green.date__week-day Вторник
+                        p.text-xs.fz-24.date__event RCL
+                        div.common-text.fz-10.white.date__countdown Осталось
+                            div.date__countdown-value 20 дней
+                p.common-text.fz-14.ming.activity__events-number Всего событий: <span>3</span>
+
+        ul.activity-footer
+            li.activity-footer__item
+                a(href='#').activity-footer__link
+                    img(src='img/svg/support.svg' alt='support').activity-footer__icon.activity-footer__icon--support
+            li.activity-footer__item
+                a(href='#').activity-footer__link
+                    img(src='img/svg/rss.svg' alt='rss').activity-footer__icon.activity-footer__icon--rss
+                    span.text-xs.black.activity-footer__notification 5
+            li.activity-footer__item
+                a(href='#').activity-footer__link
+                    img(src='img/svg/bell.svg' alt='bell').activity-footer__icon.activity-footer__icon--notify
+                    span.text-xs.black.activity-footer__notification 3
+
+        script(src='js/jquery-3.0.0.min.js')
+        script(src='js/script.js')
