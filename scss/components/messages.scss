@@ -1,0 +1,58 @@
+/*messages*/
+.messages {
+  padding-left: 10 * $px;
+
+  &__item {
+    margin-bottom: 14 * $px;
+
+    padding: 10 * $px 6 * $px 5 * $px 7 * $px;
+
+    border: $px solid $silver;
+    border-radius: 5 * $px;
+
+    background: #fff;
+
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -11 * $px;
+
+      margin-top: -8 * $px;
+
+      width: 0;
+      height: 0;
+
+      border-right: 10 * $px solid $silver;
+      border-top: 8 * $px solid transparent;
+      border-bottom: 8 * $px solid transparent;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -9 * $px;
+
+      margin-top: -8 * $px;
+
+      width: 0;
+      height: 0;
+
+      border-right: 10 * $px solid #fff;
+      border-top: 8 * $px solid transparent;
+      border-bottom: 8 * $px solid transparent;
+    }
+  }
+
+  &__author {
+    text-align: right;
+  }
+}
+/*/messages*/

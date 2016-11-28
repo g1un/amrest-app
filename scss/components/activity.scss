@@ -110,8 +110,19 @@
     }
   }
 
-  &__events-number {
+  &__text-down {
+    display: block;
+
     text-align: center;
+    text-decoration: none;
+  }
+
+  &__likes {
+    margin: 15 / 16 * $base-font-size auto 35 * $px;
+  }
+
+  &__messages {
+    margin-bottom: 32 * $px;
   }
 }
 /*/activity-stats*/

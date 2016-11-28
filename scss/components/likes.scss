@@ -1,0 +1,37 @@
+/*likes*/
+.likes {
+  position: relative;
+
+  width: 110 / 16 * $base-font-size;
+  height: 110 / 16 * $base-font-size;
+  padding-top: 21 / 16 * $base-font-size;
+  box-sizing: border-box;
+
+  border: 5 / 16 * $base-font-size solid $btn-hover-color-dark;
+  border-radius: 50%;
+
+  text-align: center;
+
+  &__img {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 52 / 16 * $base-font-size;
+  }
+
+  &__number {
+    position: absolute;
+    top: 5 * $px;
+    right: -5 * $px;
+
+    width: 29 / 16 * $base-font-size;
+    height: 29 / 16 * $base-font-size;
+
+    border-radius: 50%;
+
+    background: $percent-violet;
+
+    line-height: 29 / 16 * $base-font-size;
+  }
+}
+/*/likes*/

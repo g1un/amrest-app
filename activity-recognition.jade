@@ -21,42 +21,29 @@ html
                 a(href='#').activity-list__link
                     img(src='img/svg/graph.svg' alt='graph').activity-list__icon
             li.activity-list__item
-                a(href='#').activity-list__link.activity-list__link--active
+                a(href='#').activity-list__link
                     img(src='img/svg/calendar.svg' alt='calendar').activity-list__icon
             li.activity-list__item
-                a(href='#').activity-list__link
+                a(href='#').activity-list__link.activity-list__link--active
                     img(src='img/svg/medal.svg' alt='medal').activity-list__icon
 
         section.layout-middle.layout-bg-light
             div.activity
-                h2.text-bold.ttu.green-dark.activity__title Запланируй событие
-                    button(type='button').activity__title-btn
-                ul.activity__dates
-                    li.clearfix.date.activity__dates-item
-                        div.date__value
-                            div.common-text.fz-14.green.date__month Сентября
-                            div.common-text.fz-30.green.date__day 18
-                            div.common-text.fz-11.green.date__week-day Вторник
-                        p.text-xs.date__event День Рождения Анастасии Федоровой
-                        div.common-text.fz-10.white.date__countdown Осталось
-                            div.date__countdown-value 20 дней
-                    li.clearfix.date.activity__dates-item
-                        div.date__value
-                            div.common-text.fz-14.green.date__month Сентября
-                            div.common-text.fz-30.green.date__day 22
-                            div.common-text.fz-11.green.date__week-day Вторник
-                        p.text-xs.date__event Корпоративное мероприятие
-                        div.common-text.fz-10.white.date__countdown Осталось
-                            div.date__countdown-value 20 дней
-                    li.clearfix.date.activity__dates-item
-                        div.date__value
-                            div.common-text.fz-14.green.date__month Сентября
-                            div.common-text.fz-30.green.date__day 25
-                            div.common-text.fz-11.green.date__week-day Вторник
-                        p.text-xs.fz-24.date__event RCL
-                        div.common-text.fz-10.white.date__countdown Осталось
-                            div.date__countdown-value 20 дней
-                p.common-text.fz-14.ming.activity__text-down Всего событий: <span>3</span>
+                h2.text-bold.ttu.green-dark.activity__title Признание
+                div.likes.activity__likes
+                    img(src='img/svg/thumbsup.svg').likes__img
+                    span.common-text.fz-19.white.likes__number 5
+                ul.messages.activity__messages
+                    li.messages__item
+                        p.text-it.fz-12.green-dark.messages__text Ты классный и всегда можешь решить любую задачу!
+                        p.common-text.fz-12.dusty-gray.messages__author Караулова Ирина
+                    li.messages__item
+                        p.text-it.fz-12.green-dark.messages__text Ты классный и всегда можешь решить любую задачу!
+                        p.common-text.fz-12.dusty-gray.messages__author Караулова Ирина
+                    li.messages__item
+                        p.text-it.fz-12.green-dark.messages__text Ты классный и всегда можешь решить любую задачу!
+                        p.common-text.fz-12.dusty-gray.messages__author Караулова Ирина
+                a(href='#').common-text.fz-14.ming.activity__text-down Смотреть все
 
         ul.activity-footer
             li.activity-footer__item

@@ -86,7 +86,7 @@ gulp.task('browserSync', function() {
   browserSync.init({
     server: {
       baseDir: 'app',
-      index: 'activity-calendar.html'
+      index: 'profile-personal-info.html'
     }
   })
 });

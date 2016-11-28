@@ -16,9 +16,13 @@ $font-size-11: 11 / 16 * $base-font-size;
 $xxs-font-size: 10 / 16 * $base-font-size;
 //font-size*/
 
+//pixel
+$px: 1 / 16 * $base-font-size;
+
 /*font-family*/
 $roboto-reg: Roboto-Regular, sans-serif;
 $roboto-bold: Roboto-Bold, sans-serif;
+$roboto-italic: Roboto-Italic, sans-serif;
 /*/font-family*/
 
 /*color*/
@@ -49,5 +53,6 @@ $color-ming: $text-common-light-color;
 
 $percent-blue: #3b76bf;
 $percent-violet: #a345ab;
+$silver: #ccc;
 /*/color*/
 /*/variables*/
