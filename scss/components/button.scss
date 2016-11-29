@@ -36,6 +36,12 @@
   }
 }
 
+.btn-form-sm {
+  @extend .btn-form;
+
+  line-height: 28 * $px !important;
+}
+
 .btn-twosided {
   padding-left: 30 / 16 * $base-font-size;
   padding-right: 30 / 16 * $base-font-size;
@@ -103,5 +109,55 @@
   margin: 0 auto;
 
   box-shadow: 3 / 16 * $base-font-size 3 / 16 * $base-font-size 3 / 16 * $base-font-size 0 rgba(0,0,0,.25) ;
+}
+
+.btn-simple-add {
+
+  @include btn(
+    23 * $px,
+    5 * $px,
+    #fff,
+    #fff,
+    $px,
+    $input-color,
+    0,
+    24 * $px
+  );
+  text-align: center;
+
+  display: block;
+  width: 116 * $px;
+
+  box-shadow: 3 * $px 3 * $px 3 * $px 0 rgba(0,0,0,.25);
+
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 8 * $px;
+
+    margin-top: -1 * $px;
+
+    width: 8 * $px;
+    height: 2 * $px;
+
+    background: $input-color;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 11 * $px;
+
+    margin-top: -4 * $px;
+
+    width: 2 * $px;
+    height: 8 * $px;
+
+    background: $input-color;
+  }
 }
 /*end of button*/

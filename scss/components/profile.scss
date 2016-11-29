@@ -1,0 +1,16 @@
+/*profile*/
+.profile {
+  padding: 15 * $px 0;
+
+  max-height: 100%;
+  box-sizing: border-box;
+
+  overflow: auto;
+
+  &__title {
+    margin-bottom: 26 * $px;
+
+    text-align: center;
+  }
+}
+/*/profile*/

@@ -18,10 +18,10 @@ html
                         img(src='img/svg/profile-slogan-triangle.svg').profile-header__slogan-img
             ul.activity-list.profile-header__nav
                 li.activity-list__item
-                    a(href='#').activity-list__link.activity-list__link--active
+                    a(href='#').activity-list__link
                         img(src='img/svg/bag-in-loupe.svg' alt='id').activity-list__icon
                 li.activity-list__item
-                    a(href='#').activity-list__link
+                    a(href='#').activity-list__link.activity-list__link--active
                         img(src='img/svg/people-plus.svg' alt='bookmark').activity-list__icon
                 li.activity-list__item
                     a(href='#').activity-list__link
@@ -35,35 +35,37 @@ html
 
         section.layout-profile.layout-bg-light
             div.activity
-                h2.bold-text.fz-14.green-dark.ttu.green-dark.profile__title Профессиональная информация
-                form.profile__form
+                h2.bold-text.fz-14.green-dark.ttu.green-dark.profile__title Социальные сети
+                form(action='#', method='get').profile__form
                     table.table-inputs
                         tr.table-inputs__tr
-                            td.common-text.fz-12.green-dark.table-inputs__key Должность
+                            td.common-text.fz-12.green-dark.table-inputs__key
+                                div.btn-form-sm.table-inputs__icon
+                                    img(src='img/svg/vk.svg').table-inputs__img.table-inputs__img--vk
                             td.table-inputs__val
-                                input(type='text', name='profile-position').common-text.fz-12.green-dark.common-text.fz-12.green-dark.btn-form-sm
+                                input(type='text', name='profile-social-vk').common-text.fz-12.green-dark.common-text.fz-12.green-dark.btn-form-sm
                         tr.table-inputs__tr
-                            td.common-text.fz-12.green-dark.table-inputs__key Ресторан
+                            td.common-text.fz-12.green-dark.table-inputs__key
+                                div.btn-form-sm.table-inputs__icon
+                                    img(src='img/svg/fb.svg').table-inputs__img.table-inputs__img--fb
                             td.table-inputs__val
-                                input(type='text', name='profile-position').common-text.fz-12.green-dark.btn-form-sm
+                                input(type='text', name='profile-social-fb').common-text.fz-12.green-dark.btn-form-sm
                         tr.table-inputs__tr
-                            td.common-text.fz-12.green-dark.table-inputs__key Руководитель
+                            td.common-text.fz-12.green-dark.table-inputs__key
+                                div.btn-form-sm.table-inputs__icon
+                                    img(src='img/svg/tw.svg').table-inputs__img.table-inputs__img--tw
                             td.table-inputs__val
-                                input(type='text', name='profile-manager').common-text.fz-12.green-dark.btn-form-sm
+                                input(type='text', name='profile-social-tw').common-text.fz-12.green-dark.btn-form-sm
                         tr.table-inputs__tr
-                            td.common-text.fz-12.green-dark.table-inputs__key Район
+                            td.common-text.fz-12.green-dark.table-inputs__key
+                                div.btn-form-sm.table-inputs__icon
+                                    img(src='img/svg/ig.svg').table-inputs__img.table-inputs__img--ig
                             td.table-inputs__val
-                                input(type='text', name='profile-area').common-text.fz-12.green-dark.btn-form-sm
+                                input(type='text', name='profile-social-ig').common-text.fz-12.green-dark.btn-form-sm
                         tr.table-inputs__tr
-                            td.common-text.fz-12.green-dark.table-inputs__key Регион
-                            td.table-inputs__val
-                                input(type='text', name='profile-region').common-text.fz-12.green-dark.btn-form-sm
-                        tr.table-inputs__tr
-                            td.common-text.fz-12.green-dark.table-inputs__key Статус
-                            td.table-inputs__val
-                                input(type='text', name='profile-status').common-text.fz-12.green-dark.btn-form-sm
-
-
+                            td(colspan='2').table-inputs__buttons.clearfix
+                                button(type='button').common-text.fz-12.blue-lagoon.btn-simple-add.fl-l.table-inputs__btn Добавить
+                                input(type='submit', name='profile-social-submit', value='Сохранить').common-text.fz-10.white.btn-simple-green.fl-r.table-inputs__btn
 
         ul.activity-footer
             li.activity-footer__item

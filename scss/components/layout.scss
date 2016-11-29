@@ -35,6 +35,12 @@
   height: 100vh;
 }
 
+.layout-profile {
+  @extend .layout-middle;
+
+  padding-top: 120 * $px;
+}
+
 .layout-side-menu {
   padding-top: 163 / 16 * $base-font-size;
   padding-bottom: 50 / 16 * $base-font-size;

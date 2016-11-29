@@ -1,0 +1,63 @@
+/*table-inputs*/
+.table-inputs {
+  margin: 0 auto;
+
+  &__key,
+  &__val {
+    padding-bottom: 6 * $px;
+  }
+
+  &__key {
+    padding-right: 10 * $px;
+
+    text-align: right;
+  }
+
+  &__val {
+    width: 187 * $px;
+  }
+
+  &__icon {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 34 * $px;
+    padding: 0;
+
+    text-align: center;
+  }
+
+  &__img {
+    display: inline-block;
+    vertical-align: middle;
+
+    margin-top: -1 * $px;
+
+    &--vk {
+      width: 23 * $px;
+    }
+
+    &--fb {
+      width: 11 * $px;
+    }
+
+    &--tw {
+      width: 20 * $px;
+    }
+
+    &--ig {
+      width: 18 * $px;
+
+      margin-top: -3 * $px;
+    }
+  }
+
+  &__buttons {
+    padding-top: 9 * $px;
+  }
+
+  &__btn {
+    width: 105 * $px;
+  }
+}
+/*/table-inputs*/

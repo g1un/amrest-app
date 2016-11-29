@@ -4,7 +4,7 @@
   line-height: 1.2em;
 }
 
-%bold-text {
+.bold-text {
   font-family: $roboto-bold;
   line-height: 1.2em;
 }
@@ -105,19 +105,19 @@
 }
 
 .text-bold-13 {
-  @extend %bold-text;
+  @extend .bold-text;
   font-size: $font-size-13;
   text-decoration: none;
 }
 
 .text-bold-15 {
-  @extend %bold-text;
+  @extend .bold-text;
   font-size: $font-size-15;
   text-decoration: none;
 }
 
 .text-bold {
-  @extend %bold-text;
+  @extend .bold-text;
   font-size: $base-font-size;
 }
 
@@ -153,6 +153,10 @@
 
 .ming {
   color: $color-ming;
+}
+
+.blue-lagoon {
+  color: $input-color;
 }
 
 //font-size

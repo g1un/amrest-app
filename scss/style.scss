@@ -17,9 +17,13 @@
 @import "components/rest-find";
 @import "components/password-message";
 @import "components/register";
+@import "components/activity-list";
 @import "components/progress-bar";
 @import "components/likes";
 @import "components/messages";
+@import "components/date";
+@import "components/profile-header";
+@import "components/table-inputs";
 
 @import "components/side-menu";
 @import "components/side-menu-header";
@@ -27,7 +31,6 @@
 @import "components/side-menu-footer";
 
 @import "components/activity";
-@import "components/activity-list";
 @import "components/activity-footer";
 
 @import "components/percent-circle";
@@ -35,5 +38,6 @@
 @import "components/activity-data-item";
 @import "components/activity-date";
 @import "components/activity-progress";
-@import "components/date";
+
+@import "components/profile";
 /*end of style*/

@@ -50,4 +50,23 @@ body {
   display: table;
   clear: both;
 }
+
+//vertical thumb
+::-webkit-scrollbar-thumb:vertical {
+  background-color: transparent;
+}
+
+//vertical thumb
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: transparent;
+}
+
+//positioning
+.fl-l {
+  float: left;
+}
+
+.fl-r {
+  float: right;
+}
 /*end of general*/

@@ -1,0 +1,88 @@
+/*profile-header*/
+.profile-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  padding-top: 2 * $px;
+
+  background: $footer-start-btn-hover;
+
+  &__up {
+    margin-bottom: 15 * $px;
+
+    padding: 0 11 * $px;
+  }
+
+  &__photo {
+    float: left;
+
+    width: 71 * $px;
+    height: 71 * $px;
+    box-sizing: border-box;
+
+    border: 2 * $px solid $silver;
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__name {
+    margin-left: 80 * $px;
+    margin-bottom: 12 * $px;
+
+    padding-top: 6 * $px;
+    padding-left: 4 * $px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__slogan {
+    float: left;
+
+    margin-left: 8 * $px;
+
+    max-width: calc(100% - 80 * #{$px});
+    padding: 10 * $px 13 * $px;
+    box-sizing: border-box;
+
+    background: $light-green;
+
+    position: relative;
+  }
+
+  &__slogan-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__slogan-triangle {
+    display: block;
+
+    position: absolute;
+    top: -5 * $px;
+    left: 11 * $px;
+
+    width: 16 * $px;
+
+    line-height: 0;
+  }
+
+  &__slogan-img {
+    width: 100%;
+  }
+
+  &__nav {
+    position: static;
+  }
+}
+/*/profile-header*/
