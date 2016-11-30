@@ -1,0 +1,63 @@
+doctype html
+html
+    head
+        title «Amrest-app»
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        link(rel='stylesheet', type='text/css', href='css/normalize.css')
+        link(rel='stylesheet', type='text/css', href='css/style.css')
+    body
+        div.layout-bg-start.layout-profile-footer
+            section.profile-main
+                div.profile-main__photo
+                    img(src='img/photo.jpg')
+                    a(href='#').profile-main__photo-change
+                        img(src='img/svg/pen.svg')
+                p.bold-text.fz-21.white.profile-main__name Maria Ivanova
+                div.profile-main__slogan
+                    span.profile-main__slogan-triangle
+                        img(src='img/svg/profile-slogan-triangle.svg')
+                    p.common-text.fz-13.green-dark.profile-main__slogan-text Мой девиз: «Возможно всё!»
+                    a(href='#').profile-main__slogan-change
+                        img(src='img/svg/pen.svg')
+                ul.profile-main__list
+                    li.profile-main__item
+                        a(href='#').bold-text.fz-13.plantation.tdn.btn-wide-icon.profile-main__link
+                            |Профессиональная информация
+                            div.btn-wide-icon__img
+                                img(src='img/svg/bag-in-loupe.svg')
+                    li.profile-main__item
+                        a(href='#').bold-text.fz-13.plantation.tdn.btn-wide-icon.profile-main__link
+                            |Социальные сети
+                            div.btn-wide-icon__img
+                                img(src='img/svg/people-plus.svg' alt='bookmark')
+                    li.profile-main__item
+                        a(href='#').bold-text.fz-13.plantation.tdn.btn-wide-icon.profile-main__link
+                            |Контактная информация
+                            div.btn-wide-icon__img
+                                img(src='img/svg/tel-mail.svg')
+                    li.profile-main__item
+                        a(href='#').bold-text.fz-13.plantation.tdn.btn-wide-icon.profile-main__link
+                            |Персональные данные
+                            div.btn-wide-icon__img
+                                img(src='img/svg/calendar-man.svg')
+                    li.profile-main__item
+                        a(href='#').bold-text.fz-13.plantation.tdn.btn-wide-icon.profile-main__link
+                            |Сменить пароль
+                            div.btn-wide-icon__img.btn-wide-icon__img--lock
+                                img(src='img/svg/lock-unlocked.svg')
+        ul.activity-footer
+            li.activity-footer__item
+                a(href='#').activity-footer__link
+                    img(src='img/svg/support.svg' alt='support').activity-footer__icon.activity-footer__icon--support
+            li.activity-footer__item
+                a(href='#').activity-footer__link
+                    img(src='img/svg/rss.svg' alt='rss').activity-footer__icon.activity-footer__icon--rss
+                    span.text-xs.black.activity-footer__notification 5
+            li.activity-footer__item
+                a(href='#').activity-footer__link
+                    img(src='img/svg/bell.svg' alt='bell').activity-footer__icon.activity-footer__icon--notify
+                    span.text-xs.black.activity-footer__notification 3
+
+        script(src='js/jquery-3.0.0.min.js')
+        script(src='js/script.js')

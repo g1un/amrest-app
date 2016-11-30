@@ -41,6 +41,12 @@
   padding-top: 120 * $px;
 }
 
+.layout-profile-footer {
+  @extend .layout-middle;
+
+  padding-top: 0;
+}
+
 .layout-side-menu {
   padding-top: 163 / 16 * $base-font-size;
   padding-bottom: 50 / 16 * $base-font-size;
@@ -51,6 +57,11 @@
 
 .layout-bg-light {
   background: transparent url(../img/bg-activity.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.layout-bg-start {
+  background: $bg-color url('../img/bg-start.jpg') no-repeat 0 0;
   background-size: cover;
 }
 /*end of layout*/

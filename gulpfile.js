@@ -41,7 +41,7 @@ gulp.task('inline', function(){
   return gulp.src('app/*.html')
     .pipe(inline({
       base: 'app/img/svg',
-      disabledTypes: ['js', 'css'],
+      disabledTypes: ['js', 'css', 'img'],
       ignore: ['css', 'js', 'fonts']
     }))
     .pipe(gulp.dest('app'));
@@ -86,7 +86,7 @@ gulp.task('browserSync', function() {
   browserSync.init({
     server: {
       baseDir: 'app',
-      index: 'profile-social.html'
+      index: 'profile-main.html'
     }
   })
 });

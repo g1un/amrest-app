@@ -19,7 +19,7 @@
         </div>
       </div>
       <ul class="activity-list profile-header__nav">
-        <li class="activity-list__item"><a href="#" class="activity-list__link activity-list__link--active"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 22.6 22.6" alt="id" class="activity-list__icon">
+        <li class="activity-list__item"><a href="#" class="activity-list__link"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 22.6 22.6" alt="id" class="activity-list__icon">
 <g>
 	<g>
 		<defs>
@@ -58,7 +58,7 @@
 		 M2.8,5.2"/>
 </g>
 </svg></a></li>
-        <li class="activity-list__item"><a href="#" class="activity-list__link"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="-286 411.3 22.5 19.6" alt="develop" class="activity-list__icon">
+        <li class="activity-list__item"><a href="#" class="activity-list__link activity-list__link--active"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="-286 411.3 22.5 19.6" alt="develop" class="activity-list__icon">
 <path style="fill: none !important;" d="M-284.5,414.1l0.9-1.7l20.1-0.1v15.8l-14.6-0.5l-1.1-0.9l-2.8-3.7l-2.2-4.6L-284.5,414.1z"/>
 <g id="XMLID_14_">
 	<path id="XMLID_22_" fill="#234448" d="M-264.3,412.3h-16.9l1,1.7h13.3l-7.4,5.2l-5.2-3.7c0,0.1,0,0.3-0.1,0.4
@@ -109,43 +109,24 @@
     </header>
     <section class="layout-profile layout-bg-light">
       <div class="activity">
-        <h2 class="bold-text fz-14 green-dark ttu green-dark profile__title">Профессиональная информация</h2>
-        <form class="profile__form">
+        <h2 class="bold-text fz-14 green-dark ttu green-dark profile__title">Контактная информация</h2>
+        <form action="#" method="get" class="profile__form">
           <table class="table-inputs">
             <tr class="table-inputs__tr">
-              <td class="common-text fz-12 green-dark table-inputs__key">Должность</td>
+              <td class="common-text fz-12 green-dark table-inputs__key">Телефон</td>
               <td class="table-inputs__val">
-                <input type="text" name="profile-position" class="common-text fz-12 green-dark common-text fz-12 green-dark btn-form-sm">
+                <input type="text" name="profile-tel" class="common-text fz-12 green-dark common-text fz-12 green-dark btn-form-sm">
               </td>
             </tr>
             <tr class="table-inputs__tr">
-              <td class="common-text fz-12 green-dark table-inputs__key">Ресторан</td>
+              <td class="common-text fz-12 green-dark table-inputs__key">Email</td>
               <td class="table-inputs__val">
-                <input type="text" name="profile-position" class="common-text fz-12 green-dark btn-form-sm">
+                <input type="text" name="profile-email" class="common-text fz-12 green-dark btn-form-sm">
               </td>
             </tr>
             <tr class="table-inputs__tr">
-              <td class="common-text fz-12 green-dark table-inputs__key">Руководитель</td>
-              <td class="table-inputs__val">
-                <input type="text" name="profile-manager" class="common-text fz-12 green-dark btn-form-sm">
-              </td>
-            </tr>
-            <tr class="table-inputs__tr">
-              <td class="common-text fz-12 green-dark table-inputs__key">Район</td>
-              <td class="table-inputs__val">
-                <input type="text" name="profile-area" class="common-text fz-12 green-dark btn-form-sm">
-              </td>
-            </tr>
-            <tr class="table-inputs__tr">
-              <td class="common-text fz-12 green-dark table-inputs__key">Регион</td>
-              <td class="table-inputs__val">
-                <input type="text" name="profile-region" class="common-text fz-12 green-dark btn-form-sm">
-              </td>
-            </tr>
-            <tr class="table-inputs__tr">
-              <td class="common-text fz-12 green-dark table-inputs__key">Статус</td>
-              <td class="table-inputs__val">
-                <input type="text" name="profile-status" class="common-text fz-12 green-dark btn-form-sm">
+              <td colspan="2" class="table-inputs__buttons clearfix">
+                <input type="submit" name="profile-social-submit" value="Сохранить" class="common-text fz-10 white btn-simple-green fl-r table-inputs__btn">
               </td>
             </tr>
           </table>

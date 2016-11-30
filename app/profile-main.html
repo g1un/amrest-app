@@ -3,23 +3,41 @@
   <head>
     <title>«Amrest-app»</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <header class="profile-header">
-      <div class="profile-header__up">
-        <div class="profile-header__photo"><img src="img/photo.jpg"></div>
-        <p class="common-text green-dark fz-14 profile-header__name">Maria Ivanova</p>
-        <div class="profile-header__slogan">
-          <p class="common-text green-dark fz-10 profile-header__slogan-text">Мой девиз: «Возможно всё!»</p><span class="profile-header__slogan-triangle"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="-296.9 414.6 15.8 6.2" class="profile-header__slogan-img">
+    <div class="layout-bg-start layout-profile-footer">
+      <section class="profile-main">
+        <div class="profile-main__photo"><img src="img/photo.jpg"><a href="#" class="profile-main__photo-change"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 18.2 18.2">
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#234448" d="M10.9,3.8c-0.5-0.5-1.3-0.5-1.7,0L8.8,4.3l-6.1,6.1l0,0l-0.2,0.2
+		c0,0-0.6,0.6-2,5c0,0,0,0.1,0,0.1c0,0.1,0,0.2-0.1,0.2c0,0.1,0,0.1-0.1,0.2c0,0.1,0,0.1-0.1,0.2c0,0.1-0.1,0.3-0.1,0.4
+		c-0.1,0.3-0.3,1.1-0.1,1.4c0.3,0.3,1,0,1.4-0.1c0.2,0,0.3-0.1,0.4-0.1c0.1,0,0.1,0,0.2-0.1c0.1,0,0.1,0,0.2-0.1
+		c0.1,0,0.2-0.1,0.3-0.1c0,0,0,0,0.1,0c4.2-1.3,5-1.9,5-2c0,0,0,0,0,0c0,0,0,0,0,0l0.2-0.2l0,0L14,9.5L14.4,9c0.5-0.5,0.5-1.3,0-1.7
+		L10.9,3.8z M7,14.9C7,14.9,7,14.9,7,14.9C7,14.9,7,14.9,7,14.9C7,14.9,7,14.9,7,14.9C7,14.9,6.9,15,7,14.9c-0.3,0.2-0.9,0.5-2.3,1
+		C4.5,16,4.4,16,4.2,16.1l-2-2c0.1-0.2,0.1-0.4,0.2-0.5c0.5-1.4,0.8-2,0.9-2.2c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0
+		l0.1-0.1l3.7,3.7L7,14.9z M17.9,3.8l-3.5-3.5c-0.5-0.5-1.3-0.5-1.7,0l-0.9,0.9c-0.5,0.5-0.5,1.3,0,1.7l3.5,3.5
+		c0.5,0.5,1.3,0.5,1.7,0l0.9-0.9C18.3,5.1,18.3,4.3,17.9,3.8L17.9,3.8z M17.9,3.8"/>
+</svg></a></div>
+        <p class="bold-text fz-21 white profile-main__name">Maria Ivanova</p>
+        <div class="profile-main__slogan"><span class="profile-main__slogan-triangle"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="-296.9 414.6 15.8 6.2">
 	<polygon fill="#ADD6DA" points="-281.1,414.6 -296.9,420.8 -285.7,420.8 "/>
 </svg></span>
+          <p class="common-text fz-13 green-dark profile-main__slogan-text">Мой девиз: «Возможно всё!»</p><a href="#" class="profile-main__slogan-change"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 18.2 18.2">
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#234448" d="M10.9,3.8c-0.5-0.5-1.3-0.5-1.7,0L8.8,4.3l-6.1,6.1l0,0l-0.2,0.2
+		c0,0-0.6,0.6-2,5c0,0,0,0.1,0,0.1c0,0.1,0,0.2-0.1,0.2c0,0.1,0,0.1-0.1,0.2c0,0.1,0,0.1-0.1,0.2c0,0.1-0.1,0.3-0.1,0.4
+		c-0.1,0.3-0.3,1.1-0.1,1.4c0.3,0.3,1,0,1.4-0.1c0.2,0,0.3-0.1,0.4-0.1c0.1,0,0.1,0,0.2-0.1c0.1,0,0.1,0,0.2-0.1
+		c0.1,0,0.2-0.1,0.3-0.1c0,0,0,0,0.1,0c4.2-1.3,5-1.9,5-2c0,0,0,0,0,0c0,0,0,0,0,0l0.2-0.2l0,0L14,9.5L14.4,9c0.5-0.5,0.5-1.3,0-1.7
+		L10.9,3.8z M7,14.9C7,14.9,7,14.9,7,14.9C7,14.9,7,14.9,7,14.9C7,14.9,7,14.9,7,14.9C7,14.9,6.9,15,7,14.9c-0.3,0.2-0.9,0.5-2.3,1
+		C4.5,16,4.4,16,4.2,16.1l-2-2c0.1-0.2,0.1-0.4,0.2-0.5c0.5-1.4,0.8-2,0.9-2.2c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0
+		l0.1-0.1l3.7,3.7L7,14.9z M17.9,3.8l-3.5-3.5c-0.5-0.5-1.3-0.5-1.7,0l-0.9,0.9c-0.5,0.5-0.5,1.3,0,1.7l3.5,3.5
+		c0.5,0.5,1.3,0.5,1.7,0l0.9-0.9C18.3,5.1,18.3,4.3,17.9,3.8L17.9,3.8z M17.9,3.8"/>
+</svg></a>
         </div>
-      </div>
-      <ul class="activity-list profile-header__nav">
-        <li class="activity-list__item"><a href="#" class="activity-list__link activity-list__link--active"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 22.6 22.6" alt="id" class="activity-list__icon">
+        <ul class="profile-main__list">
+          <li class="profile-main__item"><a href="#" class="bold-text fz-13 plantation tdn btn-wide-icon profile-main__link">Профессиональная информация
+              <div class="btn-wide-icon__img"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 22.6 22.6">
 <g>
 	<g>
 		<defs>
@@ -45,8 +63,9 @@
 		c-0.4-0.3-0.7-0.6-1-0.9c-0.1-0.1-0.1-0.1-0.1,0v2.6c0,0.6,0.5,1.2,1.1,1.2h7.2c0.2,0,0.4-0.1,0.6-0.2c0.3-0.2,0.6-0.6,0.6-1V9.8
 		c0-0.1,0-0.1-0.1,0C14.2,10.1,13.9,10.4,13.5,10.7L13.5,10.7z M13.5,10.7"/>
 </g>
-</svg></a></li>
-        <li class="activity-list__item"><a href="#" class="activity-list__link"><svg version="1.1" id="&#x421;&#x43B;&#x43E;&#x439;_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 21.1 21" enable-background="new 0 0 21.1 21" xml:space="preserve" alt="bookmark" class="activity-list__icon">
+</svg></div></a></li>
+          <li class="profile-main__item"><a href="#" class="bold-text fz-13 plantation tdn btn-wide-icon profile-main__link">Социальные сети
+              <div class="btn-wide-icon__img"><svg version="1.1" id="&#x421;&#x43B;&#x43E;&#x439;_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 21.1 21" enable-background="new 0 0 21.1 21" xml:space="preserve" alt="bookmark">
 <g>
 	<path fill="#234448" d="M19.9,12.2c-0.7-0.7-1.7-1.2-2.7-1.3c0.9-0.8,1.4-1.9,1.4-3.2c0-2.4-1.9-4.3-4.3-4.3c-2.3,0-4.1,1.8-4.3,4
 		c2,0.9,3.4,2.9,3.4,5.2c0,0.9-0.2,1.7-0.6,2.4c0.5,0.3,1,0.6,1.4,1c1.1,1.1,1.7,2.6,1.7,4.1v0l0,0l0,0.7h5.1l0-5.7
@@ -57,8 +76,9 @@
 		c0-0.7-0.5-1.2-1.2-1.2H5.2V1.2C5.2,0.5,4.6,0,4,0C3.3,0,2.8,0.5,2.8,1.2v1.6H1.2C0.5,2.8,0,3.3,0,4c0,0.7,0.5,1.2,1.2,1.2H2.8z
 		 M2.8,5.2"/>
 </g>
-</svg></a></li>
-        <li class="activity-list__item"><a href="#" class="activity-list__link"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="-286 411.3 22.5 19.6" alt="develop" class="activity-list__icon">
+</svg></div></a></li>
+          <li class="profile-main__item"><a href="#" class="bold-text fz-13 plantation tdn btn-wide-icon profile-main__link">Контактная информация
+              <div class="btn-wide-icon__img"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="-286 411.3 22.5 19.6">
 <path style="fill: none !important;" d="M-284.5,414.1l0.9-1.7l20.1-0.1v15.8l-14.6-0.5l-1.1-0.9l-2.8-3.7l-2.2-4.6L-284.5,414.1z"/>
 <g id="XMLID_14_">
 	<path id="XMLID_22_" fill="#234448" d="M-264.3,412.3h-16.9l1,1.7h13.3l-7.4,5.2l-5.2-3.7c0,0.1,0,0.3-0.1,0.4
@@ -73,8 +93,9 @@
 	c0,0.3,0.1,0.5,0.3,0.7l3.7,6.3c0.3,0.3,0.5,0.6,0.9,0.7c0.2,0.1,0.5,0.2,0.8,0.2h0.2c0.3,0,0.5-0.1,0.7-0.3l1.7-1
 	c0,0,0.1,0,0.1-0.1h0.2c0.1,0,0.1,0.1,0.2,0.1l2.2,3.7c0,0,0,0.1,0.1,0.2v0.2c0,0.1-0.1,0.1-0.2,0.2l-0.9,0.5
 	c-0.3,0.2-0.6,0.3-0.9,0.4c-0.3,0.1-0.6,0.2-0.9,0.2C-274.8,430.9-275,430.9-275.2,430.9z"/>
-</svg></a></li>
-        <li class="activity-list__item"><a href="#" class="activity-list__link"><svg version="1.1" id="&#x421;&#x43B;&#x43E;&#x439;_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="-288 412.9 18 16" enable-background="new -288 412.9 18 16" xml:space="preserve" alt="graph" class="activity-list__icon">
+</svg></div></a></li>
+          <li class="profile-main__item"><a href="#" class="bold-text fz-13 plantation tdn btn-wide-icon profile-main__link">Персональные данные
+              <div class="btn-wide-icon__img"><svg version="1.1" id="&#x421;&#x43B;&#x43E;&#x439;_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="-288 412.9 18 16" enable-background="new -288 412.9 18 16" xml:space="preserve">
 <path fill="#224347" d="M-280.7,421.8v1.6h1.1c0.1-0.4,0.2-0.8,0.4-1.1v-0.4L-280.7,421.8L-280.7,421.8z"/>
 <path fill="#224347" d="M-280.7,426.1h1.4c-0.2-0.5-0.3-1-0.3-1.6h-1.1C-280.7,424.4-280.7,426.1-280.7,426.1z"/>
 <path fill="#224347" d="M-280.7,419.2h1.5v1.6h-1.5V419.2z"/>
@@ -96,62 +117,19 @@
 	C-270.2,421.9-272.3,419.9-274.8,419.9z M-271.9,426.9h-5.7v-0.4c0-0.9,0.8-1.7,1.7-1.8c-0.4-0.3-0.6-0.8-0.6-1.3
 	c0-1,0.8-1.8,1.8-1.8s1.8,0.8,1.8,1.8c0,0.5-0.2,1-0.6,1.3c0.4,0.1,0.8,0.2,1.1,0.5c0.3,0.3,0.5,0.8,0.5,1.3L-271.9,426.9
 	L-271.9,426.9z"/>
-</svg></a></li>
-        <li class="activity-list__item"><a href="#" class="activity-list__link"><svg version="1.1" id="&#x421;&#x43B;&#x43E;&#x439;_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 14.6 22.2" enable-background="new 0 0 14.6 22.2" xml:space="preserve" alt="calendar" class="activity-list__icon">
+</svg></div></a></li>
+          <li class="profile-main__item"><a href="#" class="bold-text fz-13 plantation tdn btn-wide-icon profile-main__link">Сменить пароль
+              <div class="btn-wide-icon__img btn-wide-icon__img--lock"><svg version="1.1" id="&#x421;&#x43B;&#x43E;&#x439;_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 14.6 22.2" enable-background="new 0 0 14.6 22.2" xml:space="preserve">
 <g>
 	<path fill="#234448" d="M13.1,9.9H3.5V5.5c0-2.1,1.7-3.8,3.8-3.8s3.8,1.7,3.8,3.8v1.8c0,0.5,0.4,0.9,0.9,0.9c0.5,0,0.9-0.4,0.9-0.9
 		V5.5c0-3.1-2.5-5.5-5.5-5.5C4.2,0,1.8,2.5,1.8,5.5v4.4H1.5C0.7,9.9,0,10.6,0,11.4v9.3c0,0.8,0.7,1.5,1.5,1.5h11.7
 		c0.8,0,1.5-0.7,1.5-1.5v-9.3C14.6,10.6,13.9,9.9,13.1,9.9L13.1,9.9z M5.5,14.9c0-1,0.8-1.8,1.8-1.8S9,13.9,9,14.9
 		c0,0.6-0.4,1.2-0.9,1.5V19H6.4v-2.6C5.9,16.1,5.5,15.5,5.5,14.9L5.5,14.9z M5.5,14.9"/>
 </g>
-</svg></a></li>
-      </ul>
-    </header>
-    <section class="layout-profile layout-bg-light">
-      <div class="activity">
-        <h2 class="bold-text fz-14 green-dark ttu green-dark profile__title">Профессиональная информация</h2>
-        <form class="profile__form">
-          <table class="table-inputs">
-            <tr class="table-inputs__tr">
-              <td class="common-text fz-12 green-dark table-inputs__key">Должность</td>
-              <td class="table-inputs__val">
-                <input type="text" name="profile-position" class="common-text fz-12 green-dark common-text fz-12 green-dark btn-form-sm">
-              </td>
-            </tr>
-            <tr class="table-inputs__tr">
-              <td class="common-text fz-12 green-dark table-inputs__key">Ресторан</td>
-              <td class="table-inputs__val">
-                <input type="text" name="profile-position" class="common-text fz-12 green-dark btn-form-sm">
-              </td>
-            </tr>
-            <tr class="table-inputs__tr">
-              <td class="common-text fz-12 green-dark table-inputs__key">Руководитель</td>
-              <td class="table-inputs__val">
-                <input type="text" name="profile-manager" class="common-text fz-12 green-dark btn-form-sm">
-              </td>
-            </tr>
-            <tr class="table-inputs__tr">
-              <td class="common-text fz-12 green-dark table-inputs__key">Район</td>
-              <td class="table-inputs__val">
-                <input type="text" name="profile-area" class="common-text fz-12 green-dark btn-form-sm">
-              </td>
-            </tr>
-            <tr class="table-inputs__tr">
-              <td class="common-text fz-12 green-dark table-inputs__key">Регион</td>
-              <td class="table-inputs__val">
-                <input type="text" name="profile-region" class="common-text fz-12 green-dark btn-form-sm">
-              </td>
-            </tr>
-            <tr class="table-inputs__tr">
-              <td class="common-text fz-12 green-dark table-inputs__key">Статус</td>
-              <td class="table-inputs__val">
-                <input type="text" name="profile-status" class="common-text fz-12 green-dark btn-form-sm">
-              </td>
-            </tr>
-          </table>
-        </form>
-      </div>
-    </section>
+</svg></div></a></li>
+        </ul>
+      </section>
+    </div>
     <ul class="activity-footer">
       <li class="activity-footer__item"><a href="#" class="activity-footer__link"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewbox="-297.7 406.9 19.7 22.8" alt="support" class="activity-footer__icon activity-footer__icon--support">
 	<path fill="#244448" d="M-278,427.9c-0.2-4.1-3.9-5.8-3.9-5.8c-0.9-0.4-2.5-1.2-3.5-1.7c1.3-1.5,1.7-3.8,1.8-4.2
